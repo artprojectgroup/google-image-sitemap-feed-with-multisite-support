@@ -8,22 +8,23 @@ Stable tag: 0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Genera dinámicamente un mapa de sitio de imágenes para Google, informando a Google y Bing automáticamente. 
+Genere dinámica y automáticamente un mapa de sitio de imágenes para Google (archivo sitemap-image.xml). No requiere ningún tipo de configuración.
 
-No requiere configuración.
 
 == Description ==
 
-Genera dinámicamente un mapa de sitio de imágenes para Google, informando a Google y Bing automáticamente cada vez que publiquemos una nueva entrada o página.
+**Google Image Sitemap Feed With Multisite Support** genera dinámicamente un mapa de sitio de imágenes para Google, informando a Google y Bing automáticamente cada vez que publiquemos una nueva entrada o página.
 
 No requiere ningún tipo de configuración, por lo que funciona de forma totalmente autónoma.
 
 Compatible con instalaciones de WordPress multisitio.
 
+Puede obtener más información sobre **Google Image Sitemap Feed With Multisite Support** en nuestro sitio web oficial: http://www.artprojectgroup.es/plugins-para-wordpress/google-image-sitemap-feed-with-multisite-support
+
 == Installation ==
 
-1. Subir la carpeta \`google-image-sitemap-feed-with-multisite-support\` al directorio \`/wp-content/plugins/\`.  
-2. Activar el plugin a través del menú \'Plugins\' en el Panel de Administración de WordPress.
+1. Subir la carpeta `google-image-sitemap-feed-with-multisite-support` al directorio `/wp-content/plugins/`.
+2. Activar el plugin a través del menú 'Plugins' en el Panel de Administración de WordPress.
 
 == Frequently Asked Questions ==
 
