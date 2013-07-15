@@ -34,7 +34,7 @@ No.
 
 = ¿Existen incompatibilidades? =
 
-Si, se han descrito errores al utilizarlo conjuntamente con Google XML Sitemaps Generator for WordPress. Los errores están provocados por un orden erróneo de las reglas de redirección de WordPress. En http://www.artprojectgroup.es tienes toda la información al respecto y la solución al error detectado.
+Si, se han descrito errores al utilizarlo conjuntamente con Google XML Sitemaps. Los errores están provocados por un orden erróneo de las reglas de redirección de WordPress. En http://www.artprojectgroup.es/como-arreglar-la-incompatibilidad-de-google-xml-sitemaps-con-nuestros-plugins tienes toda la información al respecto y la solución al error detectado.
 
 == Screenshots ==
 
