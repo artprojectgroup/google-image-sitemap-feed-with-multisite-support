@@ -19,6 +19,8 @@ No requiere ningún tipo de configuración, por lo que funciona de forma totalme
 
 Compatible con instalaciones de WordPress multisitio.
 
+Se recomienda el uso de **Google Image Sitemap Feed With Multisite Support** junto a **Google Mobile Sitemap Feed With Multisite Support** (http://wordpress.org/plugins/google-mobile-sitemap-feed-with-multisite-support/) y **Google Video Sitemap Feed With Multisite Support** (http://wordpress.org/plugins/google-video-sitemap-feed-with-multisite-support/).
+
 Puede obtener más información sobre **Google Image Sitemap Feed With Multisite Support** en nuestro sitio web oficial: http://www.artprojectgroup.es/plugins-para-wordpress/google-image-sitemap-feed-with-multisite-support
 
 == Installation ==
