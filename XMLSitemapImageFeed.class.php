@@ -1,17 +1,17 @@
 <?php
-/* ------------------------------
- *      XMLSitemapImageFeed CLASS
- * ------------------------------ */
-
+// XMLSitemapImageFeed CLASS
 class XMLSitemapImageFeed {
 
 	function go() {		
 		global $wpdb;
-		if ( $wpdb->blogid && function_exists('get_site_option') && get_site_option('tags_blog_id') == $wpdb->blogid ) {
+		if ( $wpdb->blogid && function_exists('get_site_option') && get_site_option('tags_blog_id') == $wpdb->blogid ) 
+		{
 			// we are on wpmu and this is a tags blog!
 			// create NO sitemap since it will be full 
 			// of links outside the blogs own domain...
-		} else {
+		} 
+		else 
+		{
 			// INIT
 			add_action('init', array(__CLASS__, 'init') );
 	
@@ -42,9 +42,7 @@ class XMLSitemapImageFeed {
 	// REWRITES //
 	// add sitemap rewrite rules
 	function rewrite($wp_rewrite) {
-		$feed_rules = array(
-			'sitemap-image.xml$' => $wp_rewrite->index . '?feed=sitemap-image',
-		);
+		$feed_rules = array('sitemap-image.xml$' => $wp_rewrite->index . '?feed=sitemap-image',);
 		$wp_rewrite->rules = $feed_rules + $wp_rewrite->rules;
 	}
 
@@ -63,11 +61,13 @@ class XMLSitemapImageFeed {
 		global $q_config;
 
 		if (is_array($input)) // got an array? return one!
+		{
 			foreach ( $input as $url )
-				foreach($q_config['enabled_languages'] as $language)
-					$return[] = qtrans_convertURL($url,$language);
-		else // not an array? just convert the string.
-			$return = qtrans_convertURL($input);
+			{
+				foreach($q_config['enabled_languages'] as $language) $return[] = qtrans_convertURL($url,$language);
+			}
+		}
+		else $return = qtrans_convertURL($input); // not an array? just convert the string.
 
 		return $return;
 	}
@@ -77,11 +77,13 @@ class XMLSitemapImageFeed {
 		global $xlanguage;
 	
 		if (is_array($input)) // got an array? return one!
+		{
 			foreach ( $input as $url )
-				foreach($xlanguage->options['language'] as $language)
-					$return[] = $xlanguage->filter_link_in_lang($url,$language['code']);
-	 	else // not an array? just convert the string.
-	       		$return = $xlanguage->filter_link($input);
+			{
+				foreach($xlanguage->options['language'] as $language) $return[] = $xlanguage->filter_link_in_lang($url,$language['code']);
+			}
+		}
+	 	else $return = $xlanguage->filter_link($input); // not an array? just convert the string.
 
 		return $return;
 	}
@@ -95,26 +97,18 @@ class XMLSitemapImageFeed {
 		}
 
 		// check for qTranslate and add filter
-		if (defined('QT_LANGUAGE'))
-			add_filter('xml_sitemap_url', array(__CLASS__, 'qtranslate'), 99);
+		if (defined('QT_LANGUAGE')) add_filter('xml_sitemap_url', array(__CLASS__, 'qtranslate'), 99);
 
 		// check for xLanguage and add filter
-		if (defined('xLanguageTagQuery'))
-			add_filter('xml_sitemap_url', array(__CLASS__, 'xlanguage'), 99);
+		if (defined('xLanguageTagQuery')) add_filter('xml_sitemap_url', array(__CLASS__, 'xlanguage'), 99);
 	}
 
-	/*************************************** PINGS ***************************************/
-
-	/**
-	 * Programa el ping a los buscadores web
-	 */
+	//Programa el ping a los buscadores web
 	public static function ProgramaPing() {
 		wp_schedule_single_event(time(),'enviar_ping');
 	}
 
-	/**
-	 * Envía el ping a Google y Bing
-	 */
+	//Envía el ping a Google y Bing
 	public static function EnviaPing() {
 		$ping = array("http://www.google.com/webmasters/sitemaps/ping?sitemap=" . urlencode(home_url('/') . "sitemap-image.xml"), "http://www.bing.com/webmaster/ping.aspx?siteMap=" . urlencode(home_url('/') . "sitemap-image.xml"));
 

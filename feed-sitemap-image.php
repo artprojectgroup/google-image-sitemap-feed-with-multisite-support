@@ -26,14 +26,17 @@ $wp_query->is_404 = false;	// force is_404() condition to false when on site wit
 $wp_query->is_feed = true;	// force is_feed() condition to true so WP Super Cache includes the sitemap in its feeds cache
 $domain = $_SERVER['SERVER_NAME'];
 
-if (empty ($posts)) {
-	return false;
-} else {
-	foreach ($posts as $post) {
+if (empty ($posts)) return false;
+else
+{
+	foreach ($posts as $post) 
+	{
 		$cur_post_id= $post->post_parent;
-		if($cur_post_id != $prev_post_id) {
+		if($cur_post_id != $prev_post_id) 
+		{
 			$post_url = get_permalink($cur_post_id);
-			if($first_time == 1) {
+			if($first_time == 1) 
+			{
 				echo "\t".'</url>'."\n";
 				$first_time = 0;
 			}
@@ -48,7 +51,8 @@ if (empty ($posts)) {
 			$first_time = 1;
 			$prev_post_id = $cur_post_id;
 		}
-		else {
+		else 
+		{
 			echo "\t\t".'<image:image>'."\n";
 			echo "\t\t\t".'<image:loc>'.$post->guid.'</image:loc>'."\n";
 			if ($post->post_excerpt) echo "\t\t\t".'<image:caption>'.htmlspecialchars($post->post_excerpt).'</image:caption>'."\n";
