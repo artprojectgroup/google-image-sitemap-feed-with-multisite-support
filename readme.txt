@@ -8,7 +8,7 @@ Stable tag: 0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Genera dinámicamente el archivo `sitemap-image.xml`, un mapa de sitio de imágenes para Google. No requiere ningún tipo de configuración.
+Genera dinámicamente el archivo sitemap-image.xml, un mapa de sitio de imágenes para Google. No requiere ningún tipo de configuración.
 
 == Description ==
 **Google Image Sitemap Feed With Multisite Support** genera dinámicamente un mapa de sitio de imágenes para Google creando un archivo `sitemap-image.xml` virtual. 
