@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: Google, Google Image, Google Image Sitemap, sitemap, sitemap-image.xml
 Requires at least: 2.6
 Tested up to: 3.7.1
-Stable tag: 0.2
+Stable tag: 0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -47,7 +47,6 @@ Recuerda que puedes encontrar más plugin para WordPress en [Art Project Group](
 3. Listo, ahora ya puedes disfrutar de él, y si te gusta y te resulta útil, hacer una [*donación*](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4LDTBG4ZB4FTJ).
 
 == Frequently Asked Questions ==
-
 = ¿Necesita configuración? =
 No, el plugin es totalmente autónomo.
 
@@ -61,15 +60,16 @@ Si, se han descrito errores al utilizarlo conjuntamente con el plugin **Google X
 1. Captura de pantalla de sitemap-image.xml.
 
 == Changelog ==
-
+= 0.3 =
+Reparación de errores menores. 
 = 0.2 =
-Versión inicial mejorada
-
+Versión inicial mejorada.
 = 0.1 =
-Versión inicial
+Versión inicial.
 
 == Upgrade Notice ==
-
+= 0.3 =
+Pequeños arreglos de código y traducción.
 = 0.2 =
 Pequeñas modificaciones y arreglos de código, inclusión de enlaces y actualización de los textos de información.
 
