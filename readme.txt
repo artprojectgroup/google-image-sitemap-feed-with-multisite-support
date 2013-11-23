@@ -32,6 +32,7 @@ En nuestro sitio web oficial puede obtener más información sobre [**Google Ima
 
 = Comentarios =
 No olvides dejarnos tu comentario en:
+
 * [Art Project Group](http://www.artprojectgroup.es/plugins-para-wordpress/google-image-sitemap-feed-with-multisite-support).
 * [Art Project Group](https://www.facebook.com/artprojectgroup) en Facebook.
 * [@artprojectgroup](https://twitter.com/artprojectgroup) en Twitter.
@@ -43,7 +44,7 @@ Recuerda que puedes encontrar más plugin para WordPress en [Art Project Group](
 == Installation ==
 1. Subir la carpeta `google-image-sitemap-feed-with-multisite-support` al directorio `/wp-content/plugins/`, o subir el archivo ZIP completo vía *Plugins -> Añadir nuevo -> Subir* en el Panel de Administración de tu instalación de WordPress.
 2. Activar el plugin a través del menú *Plugins* en el Panel de Administración de WordPress.
-3. Listo, ahora ya puedes disfrutar de él, y si te gusta y te resulta útil, hacer una (*donación*) [https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4LDTBG4ZB4FTJ].
+3. Listo, ahora ya puedes disfrutar de él, y si te gusta y te resulta útil, hacer una [*donación*](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4LDTBG4ZB4FTJ).
 
 == Frequently Asked Questions ==
 
