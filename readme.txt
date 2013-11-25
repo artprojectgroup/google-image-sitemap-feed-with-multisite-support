@@ -64,7 +64,8 @@ Si, se han descrito errores al utilizarlo conjuntamente con el plugin **Google X
 
 == Changelog ==
 = 0.3 =
-Pequeños arreglos de código y traducción.
+* Pequeños arreglos de código.
+* Pequeño arreglo de la traducción.
 = 0.2 =
 * Pequeñas modificaciones y arreglos de código.
 * Inclusión de enlaces.
