@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: Google, Google Image, Google Image Sitemap, sitemap, sitemap-image.xml
 Requires at least: 2.6
 Tested up to: 3.7.1
-Stable tag: 0.3
+Stable tag: 0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -63,6 +63,8 @@ Si, se han descrito errores al utilizarlo conjuntamente con el plugin **Google X
 1. Captura de pantalla de sitemap-image.xml.
 
 == Changelog ==
+= 0.4 =
+* Inclusión de nuevos botones y enlaces.
 = 0.3 =
 * Pequeños arreglos de código.
 * Pequeño arreglo de la traducción.
@@ -71,13 +73,18 @@ Si, se han descrito errores al utilizarlo conjuntamente con el plugin **Google X
 * Inclusión de enlaces.
 * Actualización de los textos de información.
 = 0.1 =
-Versión inicial.
+* Versión inicial.
 
 == Upgrade Notice ==
+= 0.4 =
+* Inclusión de nuevos botones y enlaces.
 = 0.3 =
-Pequeños arreglos de código y traducción.
+* Pequeños arreglos de código.
+* Pequeño arreglo de la traducción.
 = 0.2 =
-Pequeñas modificaciones y arreglos de código, inclusión de enlaces y actualización de los textos de información.
+* Pequeñas modificaciones y arreglos de código.
+* Inclusión de enlaces.
+* Actualización de los textos de información.
 
 ==Traducciones ==
 * *English*: by **Art Project Group** (default language).
