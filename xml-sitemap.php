@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Google Image Sitemap Feed With Multisite Support
-Version: 0.5
+Version: 0.6
 Plugin URI: http://wordpress.org/plugins/google-image-sitemap-feed-with-multisite-support/
 Description: Dynamically generates a Google Image Sitemap and automatically submit updates to Google and Bing. No settings required. Compatible with WordPress Multisite installations. Created from <a href="http://profiles.wordpress.org/users/timbrd/" target="_blank">Tim Brandon</a> <a href="http://wordpress.org/plugins/google-news-sitemap-feed-with-multisite-support/" target="_blank"><strong>Google News Sitemap Feed With Multisite Support</strong></a> and <a href="http://profiles.wordpress.org/labnol/" target="_blank">Amit Agarwal</a> <a href="http://wordpress.org/plugins/google-image-sitemap/" target="_blank"><strong>Google XML Sitemap for Images</strong></a> plugins.
 Author: Art Project Group
@@ -73,8 +73,8 @@ function xml_sitemap_image_enlaces($enlaces, $archivo) {
 add_filter('plugin_row_meta', 'xml_sitemap_image_enlaces', 10, 2);
 
 //Constantes
-define('XMLSIF_VERSION','0.4');
-define('XMLSIF_MEMORY_LIMIT','128M');
+define('XMLSIF_VERSION', '0.6');
+define('XMLSIF_MEMORY_LIMIT', '128M');
 
 if (file_exists(dirname(__FILE__).'/google-image-sitemap-feed-mu')) define('XMLSIF_PLUGIN_DIR', dirname(__FILE__).'/google-image-sitemap-feed-mu');
 else define('XMLSIF_PLUGIN_DIR', dirname(__FILE__));		
@@ -89,14 +89,13 @@ function xml_image_sitemap_plugin($nombre) {
 	$url = 'http://api.wordpress.org/plugins/info/1.0/';
 	$respuesta = wp_remote_post($url, array('body' => $consulta));
 	$plugin = unserialize($respuesta['body']);
-	//echo '<pre>' . print_r($plugin, true) . '</pre>';
 	
 	return get_object_vars($plugin);
 }
 
-//Comprueba si hay que mostrar el mensaje de configuración
-function xml_image_sitemap_muestra_mensaje() {
+//Carga las hojas de estilo
+function xml_image_sitemap_carga_css() {
 	wp_register_style('xml_image_sitemap_fuentes', plugins_url('fonts/stylesheet.css', __FILE__)); //Carga la hoja de estilo global
 	wp_enqueue_style('xml_image_sitemap_fuentes'); //Carga la hoja de estilo global
 }
-add_action('admin_init', 'xml_image_sitemap_muestra_mensaje');
+add_action('admin_init', 'xml_image_sitemap_carga_css');

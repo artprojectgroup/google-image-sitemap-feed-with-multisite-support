@@ -11,7 +11,7 @@ header('Content-Type: text/xml; charset=' . get_bloginfo('charset'), true);
 echo '<?xml version="1.0" encoding="' . get_bloginfo('charset') . '"?>
 <!-- Created by Google Image Sitemap Feed With Multisite Support by Art Project Group (http://www.artprojectgroup.es/plugins-para-wordpress/google-image-sitemap-feed-with-multisite-support) -->
 <!-- generated-on="' . date('Y-m-d\TH:i:s+00:00') . '" -->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">' . "\n";
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">' . PHP_EOL;
 
 $entradas = $wpdb->get_results ("SELECT post_title,post_excerpt,post_parent,guid FROM $wpdb->posts WHERE post_type = 'attachment' AND post_mime_type like 'image%' AND post_parent > 0 ORDER BY post_date desc"); //Consulta
 
@@ -23,39 +23,40 @@ $dominio = $_SERVER['SERVER_NAME'];
 if (empty($entradas)) return false;
 else
 {
-	$entrada_anterior = $first_time = 0;
+	$entrada_anterior = $primera_entrada = false;
 	foreach ($entradas as $entrada) 
 	{
 		$entrada_actual= $entrada->post_parent;
 		if ($entrada_actual != $entrada_anterior) 
 		{
 			$url = get_permalink($entrada_actual);
-			if ($first_time == 1) 
+			if (!$url) $url = "http://" . $_SERVER['SERVER_NAME'] . "/";
+			if ($primera_entrada == true) 
 			{
-				echo "\t" . '</url>' . "\n";
-				$first_time = 0;
+				echo "\t" . '</url>' . PHP_EOL;
+				$primera_entrada = false;
 			}
-			echo "\t" . '<url>' . "\n";
-			echo "\t\t" . '<loc>' . htmlspecialchars($url) . '</loc>' . "\n";
-			echo "\t\t" . '<image:image>' . "\n";
-			if (stristr($entrada->guid, $dominio) !== false) echo "\t\t\t" . '<image:loc>' . $entrada->guid . '</image:loc>' . "\n";
-			else echo "\t\t\t" . '<image:loc>' . preg_replace('/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}/', $dominio, $entrada->guid, 1) . '</image:loc>' . "\n";
-			if ($entrada->post_excerpt) echo "\t\t\t" . '<image:caption>' . htmlspecialchars($entrada->post_excerpt) . '</image:caption>' . "\n";
-			if ($entrada->post_title) echo "\t\t\t" . '<image:title>' . htmlspecialchars($entrada->post_title) . '</image:title>' . "\n";
-			echo "\t\t" . '</image:image>' . "\n";
-			$first_time = 1;
+			echo "\t" . '<url>' . PHP_EOL;
+			echo "\t\t" . '<loc>' . htmlspecialchars($url) . '</loc>' . PHP_EOL;
+			echo "\t\t" . '<image:image>' . PHP_EOL;
+			if (stristr($entrada->guid, $dominio) !== false) echo "\t\t\t" . '<image:loc>' . $entrada->guid . '</image:loc>' . PHP_EOL;
+			else echo "\t\t\t" . '<image:loc>' . preg_replace('/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}/', $dominio, $entrada->guid, 1) . '</image:loc>' . PHP_EOL;
+			if ($entrada->post_excerpt) echo "\t\t\t" . '<image:caption>' . htmlspecialchars($entrada->post_excerpt) . '</image:caption>' . PHP_EOL;
+			if ($entrada->post_title) echo "\t\t\t" . '<image:title>' . htmlspecialchars($entrada->post_title) . '</image:title>' . PHP_EOL;
+			echo "\t\t" . '</image:image>' . PHP_EOL;
+			$primera_entrada = true;
 			$entrada_anterior = $entrada_actual;
 		}
 		else 
 		{
-			echo "\t\t" . '<image:image>' . "\n";
-			echo "\t\t\t" . '<image:loc>' . $entrada->guid . '</image:loc>' . "\n";
-			if ($entrada->post_excerpt) echo "\t\t\t" . '<image:caption>' . htmlspecialchars($entrada->post_excerpt) . '</image:caption>' . "\n";
-			if ($entrada->post_title) echo "\t\t\t" . '<image:title>' . htmlspecialchars($entrada->post_title) . '</image:title>' . "\n";
-			echo "\t\t" . '</image:image>' . "\n";
+			echo "\t\t" . '<image:image>' . PHP_EOL;
+			echo "\t\t\t" . '<image:loc>' . $entrada->guid . '</image:loc>' . PHP_EOL;
+			if ($entrada->post_excerpt) echo "\t\t\t" . '<image:caption>' . htmlspecialchars($entrada->post_excerpt) . '</image:caption>' . PHP_EOL;
+			if ($entrada->post_title) echo "\t\t\t" . '<image:title>' . htmlspecialchars($entrada->post_title) . '</image:title>' . PHP_EOL;
+			echo "\t\t" . '</image:image>' . PHP_EOL;
 		}
 	}
-	echo "\t" . '</url>' . "\n";
+	echo "\t" . '</url>' . PHP_EOL;
 }
 echo "</urlset>";
 ?>
