@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: Google, Google Image, Google Image Sitemap, sitemap, sitemap-image.xml
 Requires at least: 2.6
 Tested up to: 3.8
-Stable tag: 0.6
+Stable tag: 0.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -36,7 +36,7 @@ No olvides dejarnos tu comentario en:
 * [Google Image Sitemap Feed With Multisite Support](http://www.artprojectgroup.es/plugins-para-wordpress/google-image-sitemap-feed-with-multisite-support) en Art Project Group.
 * [Art Project Group](https://www.facebook.com/artprojectgroup) en Facebook.
 * [@artprojectgroup](https://twitter.com/artprojectgroup) en Twitter.
-* [+ArtProjectGroupES](https://twitter.com/artprojectgroup) en Google+.
+* [+ArtProjectGroupES](https://plus.google.com/+ArtProjectGroupES/) en Google+.
 
 = Más plugins =
 Recuerda que puedes encontrar más plugin para WordPress en [Art Project Group](http://www.artprojectgroup.es/plugins-para-wordpress/) y en nuestro perfil en [WordPress](http://profiles.wordpress.org/artprojectgroup/).
@@ -63,6 +63,8 @@ Si, se han descrito errores al utilizarlo conjuntamente con el plugin **Google X
 1. Captura de pantalla de sitemap-image.xml.
 
 == Changelog ==
+= 0.7 =
+* Arreglo en la codificación de las entidades RSS.
 = 0.6 =
 * Arreglos menores en el código.
 = 0.5 =
@@ -81,6 +83,8 @@ Si, se han descrito errores al utilizarlo conjuntamente con el plugin **Google X
 * Versión inicial.
 
 == Upgrade Notice ==
+= 0.7 =
+* Arreglo en la codificación de las entidades RSS.
 = 0.6 =
 * Arreglos menores en el código.
 = 0.5 =

@@ -5,6 +5,38 @@
  * @package Google Image Sitemap Feed With Multisite Support plugin for WordPress
  */
 
+//Procesa correctamente las entidades del RSS
+$entity_custom_from = false; 
+$entity_custom_to = false;
+
+function sitemap_image_html_entity($data) {
+	global $entity_custom_from, $entity_custom_to;
+	
+	if(!is_array($entity_custom_from) || !is_array($entity_custom_to)) {
+		$array_position = 0;
+		foreach (get_html_translation_table(HTML_ENTITIES) as $key => $value) {
+			switch ($value) {
+				case '&nbsp;':
+					break;
+				case '&gt;':
+				case '&lt;':
+				case '&quot;':
+				case '&apos;':
+				case '&amp;':
+					$entity_custom_from[$array_position] = $key; 
+					$entity_custom_to[$array_position] = $value; 
+					$array_position++; 
+					break; 
+				default: 
+					$entity_custom_from[$array_position] = $value; 
+					$entity_custom_to[$array_position] = $key; 
+					$array_position++; 
+			} 
+		}
+	}
+	return str_replace($entity_custom_from, $entity_custom_to, $data); 
+}
+
 status_header('200'); // force header('HTTP/1.1 200 OK') for sites without posts
 header('Content-Type: text/xml; charset=' . get_bloginfo('charset'), true);
 
@@ -41,8 +73,8 @@ else
 			echo "\t\t" . '<image:image>' . PHP_EOL;
 			if (stristr($entrada->guid, $dominio) !== false) echo "\t\t\t" . '<image:loc>' . $entrada->guid . '</image:loc>' . PHP_EOL;
 			else echo "\t\t\t" . '<image:loc>' . preg_replace('/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}/', $dominio, $entrada->guid, 1) . '</image:loc>' . PHP_EOL;
-			if ($entrada->post_excerpt) echo "\t\t\t" . '<image:caption>' . htmlspecialchars($entrada->post_excerpt) . '</image:caption>' . PHP_EOL;
-			if ($entrada->post_title) echo "\t\t\t" . '<image:title>' . htmlspecialchars($entrada->post_title) . '</image:title>' . PHP_EOL;
+			if ($entrada->post_excerpt) echo "\t\t\t" . '<image:caption>' . sitemap_image_html_entity(htmlspecialchars($entrada->post_excerpt)) . '</image:caption>' . PHP_EOL;
+			if ($entrada->post_title) echo "\t\t\t" . '<image:title>' . sitemap_image_html_entity(htmlspecialchars($entrada->post_title)) . '</image:title>' . PHP_EOL;
 			echo "\t\t" . '</image:image>' . PHP_EOL;
 			$primera_entrada = true;
 			$entrada_anterior = $entrada_actual;
@@ -51,8 +83,8 @@ else
 		{
 			echo "\t\t" . '<image:image>' . PHP_EOL;
 			echo "\t\t\t" . '<image:loc>' . $entrada->guid . '</image:loc>' . PHP_EOL;
-			if ($entrada->post_excerpt) echo "\t\t\t" . '<image:caption>' . htmlspecialchars($entrada->post_excerpt) . '</image:caption>' . PHP_EOL;
-			if ($entrada->post_title) echo "\t\t\t" . '<image:title>' . htmlspecialchars($entrada->post_title) . '</image:title>' . PHP_EOL;
+			if ($entrada->post_excerpt) echo "\t\t\t" . '<image:caption>' . sitemap_image_html_entity(htmlspecialchars($entrada->post_excerpt)) . '</image:caption>' . PHP_EOL;
+			if ($entrada->post_title) echo "\t\t\t" . '<image:title>' . sitemap_image_html_entity(htmlspecialchars($entrada->post_title)) . '</image:title>' . PHP_EOL;
 			echo "\t\t" . '</image:image>' . PHP_EOL;
 		}
 	}
