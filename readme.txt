@@ -1,16 +1,18 @@
 === Google Image Sitemap Feed With Multisite Support ===
 Contributors: artprojectgroup 
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4LDTBG4ZB4FTJ
+Donate link: http://www.artprojectgroup.es/donacion
 Tags: Google, Google Image, Google Image Sitemap, sitemap, sitemap-image.xml
 Requires at least: 2.6
 Tested up to: 3.8.1
-Stable tag: 0.8
+Stable tag: 0.8.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Genera dinámicamente el archivo sitemap-image.xml, un mapa de sitio de imágenes para Google. No requiere ningún tipo de configuración.
 
 == Description ==
+[*Español*](http://wordpress.org/plugins/google-image-sitemap-feed-with-multisite-support/) - [*English*](http://goo.gl/u9zMFp) - [*Italiano*](http://goo.gl/ZcndP4) - [*Français*](http://goo.gl/yyWCYT) - [*Deutsch*](http://goo.gl/1mJWrO) 
+
 **Google Image Sitemap Feed With Multisite Support** genera dinámicamente un mapa de sitio de imágenes para Google creando un archivo `sitemap-image.xml` virtual. 
 
 = Características =
@@ -47,7 +49,7 @@ Recuerda que puedes encontrar más plugin para WordPress en [Art Project Group](
  * Subir el archivo ZIP completo vía *Plugins -> Añadir nuevo -> Subir* en el Panel de Administración de tu instalación de WordPress.
  * Buscar **Google Image Sitemap Feed With Multisite Support** en el buscador disponible en *Plugins -> Añadir nuevo* y pulsar el botón *Instalar ahora*.
 2. Activar el plugin a través del menú *Plugins* en el Panel de Administración de WordPress.
-3. Listo, ahora ya puedes disfrutar de él, y si te gusta y te resulta útil, hacer una [*donación*](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4LDTBG4ZB4FTJ).
+3. Listo, ahora ya puedes disfrutar de él, y si te gusta y te resulta útil, hacer una [*donación*](http://www.artprojectgroup.es/donacion).
 
 == Frequently Asked Questions ==
 = ¿Necesita configuración? =
@@ -63,6 +65,8 @@ Si, se han descrito errores al utilizarlo conjuntamente con el plugin **Google X
 1. Captura de pantalla de sitemap-image.xml.
 
 == Changelog ==
+= 0.8.1 =
+* Cambio del enlace de donación.
 = 0.8 =
 * Añadida nueva función que limpia la base de datos al desinstalar el plugin.
 = 0.7 =
@@ -85,6 +89,8 @@ Si, se han descrito errores al utilizarlo conjuntamente con el plugin **Google X
 * Versión inicial.
 
 == Upgrade Notice ==
+= 0.8.1 =
+* Cambio del enlace de donación.
 = 0.8 =
 * Añadida nueva función que limpia la base de datos al desinstalar el plugin.
 = 0.7 =
@@ -118,7 +124,7 @@ Por ello regalamos a esa gran comunidad hispana nuestros plugins con interfaces,
 Esperamos que os guste nuestra iniciativa.
 
 == Donación ==
-¿Te ha gustado y te ha resultado útil **Google Image Sitemap Feed With Multisite Support** en tu sitio web? Te agradeceríamos una [pequeña donación](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4LDTBG4ZB4FTJ) que nos ayudará a seguir mejorando este plugin y a crear más plugins totalmente gratuitos para toda la comunidad WordPress.
+¿Te ha gustado y te ha resultado útil **Google Image Sitemap Feed With Multisite Support** en tu sitio web? Te agradeceríamos una [pequeña donación](http://www.artprojectgroup.es/donacion) que nos ayudará a seguir mejorando este plugin y a crear más plugins totalmente gratuitos para toda la comunidad WordPress.
 
 == Gracias ==
 * A [Tim Brandon](http://profiles.wordpress.org/users/timbrd/) y [Amit Agarwal](http://profiles.wordpress.org/labnol/) por sus grandes plugins que han inspirado **Google Image Sitemap Feed With Multisite Support**.
