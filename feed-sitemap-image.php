@@ -45,7 +45,12 @@ echo '<?xml version="1.0" encoding="' . get_bloginfo('charset') . '"?>
 <!-- generated-on="' . date('Y-m-d\TH:i:s+00:00') . '" -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">' . PHP_EOL;
 
-$entradas = $wpdb->get_results ("SELECT post_title,post_excerpt,post_parent,guid FROM $wpdb->posts WHERE post_type = 'attachment' AND post_mime_type like 'image%' AND post_parent > 0 ORDER BY post_date desc"); //Consulta
+$entradas = get_transient('xml_sitemap_image');
+if ($entradas === false) 
+{
+     $entradas = $wpdb->get_results("SELECT post_title,post_excerpt,post_parent,guid FROM $wpdb->posts WHERE post_type = 'attachment' AND post_mime_type like 'image%' AND post_parent > 0 ORDER BY post_date desc"); //Consulta
+     set_transient('xml_sitemap_image', $entradas, 30 * DAY_IN_SECONDS);
+}
 
 global $wp_query;
 $wp_query->is_404 = false;	// force is_404() condition to false when on site without posts
