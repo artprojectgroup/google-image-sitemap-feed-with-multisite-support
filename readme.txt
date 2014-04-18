@@ -18,7 +18,7 @@ Genera dinámicamente el archivo sitemap-image.xml, un mapa de sitio de imágene
 = Características =
 * No requiere ningún tipo de configuración, por lo que funciona de forma totalmente autónoma y automática.
 * Es totalmente compatible con instalaciones de WordPress multisitio.
-* Compatible con [qtranslate](http://wordpress.org/plugins/qtranslate/) y [Media File Renamer](http://wordpress.org/plugins/media-file-renamer/)
+* Totalmente compatible con los plugins [qtranslate](http://wordpress.org/plugins/qtranslate/) y [Media File Renamer](http://wordpress.org/plugins/media-file-renamer/).
 * Informa automáticamente a Google y a Bing cada vez que publiquemos una nueva entrada o página.
 
 = Origen =
