@@ -1,7 +1,7 @@
 === Google Image Sitemap Feed With Multisite Support ===
 Contributors: artprojectgroup 
 Donate link: http://www.artprojectgroup.es/donacion
-Tags: Google, Google Image, Google Image Sitemap, sitemap, sitemap-image.xml, qtranslate, Media File Renamer
+Tags: Google, Google Image, Google Image Sitemap, sitemap, sitemap-image.xml, qTranslate, Media File Renamer
 Requires at least: 2.6
 Tested up to: 3.9
 Stable tag: 1.0
@@ -18,7 +18,7 @@ Genera dinámicamente el archivo sitemap-image.xml, un mapa de sitio de imágene
 = Características =
 * No requiere ningún tipo de configuración, por lo que funciona de forma totalmente autónoma y automática.
 * Es totalmente compatible con instalaciones de WordPress multisitio.
-* Totalmente compatible con los plugins [qtranslate](http://wordpress.org/plugins/qtranslate/) y [Media File Renamer](http://wordpress.org/plugins/media-file-renamer/).
+* Totalmente compatible con los plugins [qTranslate](http://wordpress.org/plugins/qtranslate/) y [Media File Renamer](http://wordpress.org/plugins/media-file-renamer/).
 * Informa automáticamente a Google y a Bing cada vez que publiquemos una nueva entrada o página.
 
 = Origen =
