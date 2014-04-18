@@ -64,9 +64,9 @@ else
 	foreach ($entradas as $entrada) 
 	{
 		$entrada_actual= $entrada->post_parent;
+		$url_de_imagen = wp_get_attachment_url($entrada->ID);
 		if ($entrada_actual != $entrada_anterior) 
 		{
-			$url_de_imagen = wp_get_attachment_url($entrada->ID);
 			$url = get_permalink($entrada_actual);
 			if (!$url) $url = "http://" . $_SERVER['SERVER_NAME'] . "/";
 			if ($primera_entrada == true) 
