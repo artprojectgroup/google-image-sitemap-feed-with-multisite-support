@@ -1,10 +1,10 @@
 === Google Image Sitemap Feed With Multisite Support ===
 Contributors: artprojectgroup 
 Donate link: http://www.artprojectgroup.es/donacion
-Tags: Google, Google Image, Google Image Sitemap, sitemap, sitemap-image.xml
+Tags: Google, Google Image, Google Image Sitemap, sitemap, sitemap-image.xml, qtranslate, Media File Renamer
 Requires at least: 2.6
-Tested up to: 3.8.2
-Stable tag: 0.9
+Tested up to: 3.9
+Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,7 +18,8 @@ Genera dinámicamente el archivo sitemap-image.xml, un mapa de sitio de imágene
 = Características =
 * No requiere ningún tipo de configuración, por lo que funciona de forma totalmente autónoma y automática.
 * Es totalmente compatible con instalaciones de WordPress multisitio.
-* Informa automáticamente a Google y a Bing cada vez que publiquemos una nueva entrada o página. 
+* Compatible con [qtranslate](http://wordpress.org/plugins/qtranslate/) y [Media File Renamer](http://wordpress.org/plugins/media-file-renamer/)
+* Informa automáticamente a Google y a Bing cada vez que publiquemos una nueva entrada o página.
 
 = Origen =
 **Google Image Sitemap Feed With Multisite Support** ha sido programado a partir de los plugins [*Google News Sitemap Feed With Multisite Support*](http://wordpress.org/plugins/google-news-sitemap-feed-with-multisite-support/) de [Tim Brandon](http://profiles.wordpress.org/users/timbrd/) y [*Google XML Sitemap for Images*](http://wordpress.org/plugins/google-image-sitemap/) de [Amit Agarwal](http://profiles.wordpress.org/labnol/), que aún siendo magníficos plugins no ofrecían todas las características que necesitábamos. Aún así su trabajo ha sido completamente imprescindible para la realización de este plugin.
@@ -65,6 +66,8 @@ Si, se han descrito errores al utilizarlo conjuntamente con el plugin **Google X
 1. Captura de pantalla de sitemap-image.xml.
 
 == Changelog ==
+= 1.0 =
+* Soporte del plugin [Media File Renamer](http://wordpress.org/plugins/media-file-renamer/).
 = 0.9 =
 * Arreglo de error que borraba toda la configuración al desactivar el plugin.
 * Corrección menor que evita la aparición de un código de error al recopilar información sobre el plugin.
@@ -93,6 +96,8 @@ Si, se han descrito errores al utilizarlo conjuntamente con el plugin **Google X
 * Versión inicial.
 
 == Upgrade Notice ==
+= 1.0 =
+* Soporte del plugin [Media File Renamer](http://wordpress.org/plugins/media-file-renamer/).
 = 0.9 =
 * Arreglo de error que borraba toda la configuración al desactivar el plugin.
 * Corrección menor que evita la aparición de un código de error al recopilar información sobre el plugin.

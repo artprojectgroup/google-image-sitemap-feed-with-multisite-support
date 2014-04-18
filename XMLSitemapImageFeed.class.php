@@ -94,6 +94,7 @@ class XMLSitemapImageFeed {
 			update_option('gn-sitemap-image-feed-mu-version', XMLSIF_VERSION);
 			global $wp_rewrite;
 			$wp_rewrite->flush_rules();
+			delete_transient('xml_sitemap_image');
 		}
 
 		// check for qTranslate and add filter
