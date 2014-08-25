@@ -1,10 +1,10 @@
 === Google Image Sitemap Feed With Multisite Support ===
 Contributors: artprojectgroup 
-Donate link: http://www.artprojectgroup.es/donacion
+Donate link: http://www.artprojectgroup.es/tienda/donacion
 Tags: Google, Google Image, Google Image Sitemap, sitemap, sitemap-image.xml, qTranslate, Media File Renamer
 Requires at least: 2.6
-Tested up to: 3.9
-Stable tag: 1.0.1
+Tested up to: 3.9.2
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -50,7 +50,7 @@ Recuerda que puedes encontrar más [plugins para WordPress](http://www.artprojec
  * Subir el archivo ZIP completo vía *Plugins -> Añadir nuevo -> Subir* en el Panel de Administración de tu instalación de WordPress.
  * Buscar **Google Image Sitemap Feed With Multisite Support** en el buscador disponible en *Plugins -> Añadir nuevo* y pulsar el botón *Instalar ahora*.
 2. Activar el plugin a través del menú *Plugins* en el Panel de Administración de WordPress.
-3. Listo, ahora ya puedes disfrutar de él, y si te gusta y te resulta útil, hacer una [*donación*](http://www.artprojectgroup.es/donacion).
+3. Listo, ahora ya puedes disfrutar de él, y si te gusta y te resulta útil, hacer una [*donación*](http://www.artprojectgroup.es/tienda/donacion).
 
 == Frequently Asked Questions ==
 = ¿Necesita configuración? =
@@ -66,6 +66,8 @@ Si, se han descrito errores al utilizarlo conjuntamente con el plugin **Google X
 1. Captura de pantalla de sitemap-image.xml.
 
 == Changelog ==
+= 1.1 =
+* Arreglo de error que provocaba un mensaje de error en versiones superiores a la 5.2 de PHP.
 = 1.0.1 =
 * Arreglo de error que provocaba que no se mostraran las URLs correctas en las entradas con múltiples imágenes.
 = 1.0 =
@@ -98,6 +100,8 @@ Si, se han descrito errores al utilizarlo conjuntamente con el plugin **Google X
 * Versión inicial.
 
 == Upgrade Notice ==
+= 1.1 =
+* Arreglo de error que provocaba un mensaje de error en versiones superiores a la 5.2 de PHP.
 = 1.0.1 =
 * Arreglo de error que provocaba que no se mostraran las URLs correctas en las entradas con múltiples imágenes.
 = 1.0 =
@@ -141,7 +145,7 @@ Por ello regalamos a esa gran comunidad hispana nuestros plugins con interfaces,
 Esperamos que os guste nuestra iniciativa.
 
 == Donación ==
-¿Te ha gustado y te ha resultado útil **Google Image Sitemap Feed With Multisite Support** en tu sitio web? Te agradeceríamos una [pequeña donación](http://www.artprojectgroup.es/donacion) que nos ayudará a seguir mejorando este plugin y a crear más plugins totalmente gratuitos para toda la comunidad WordPress.
+¿Te ha gustado y te ha resultado útil **Google Image Sitemap Feed With Multisite Support** en tu sitio web? Te agradeceríamos una [pequeña donación](http://www.artprojectgroup.es/tienda/donacion) que nos ayudará a seguir mejorando este plugin y a crear más plugins totalmente gratuitos para toda la comunidad WordPress.
 
 == Gracias ==
 * A [Tim Brandon](http://profiles.wordpress.org/users/timbrd/) y [Amit Agarwal](http://profiles.wordpress.org/labnol/) por sus grandes plugins que han inspirado **Google Image Sitemap Feed With Multisite Support**.

@@ -2,7 +2,7 @@
 // XMLSitemapImageFeed CLASS
 class XMLSitemapImageFeed {
 
-	function go() {		
+	public static function go() {		
 		global $wpdb;
 		if ( $wpdb->blogid && function_exists('get_site_option') && get_site_option('tags_blog_id') == $wpdb->blogid ) 
 		{
@@ -35,19 +35,19 @@ class XMLSitemapImageFeed {
 	}
 
 	// set up the image sitemap template
-	function load_template_sitemap_image() {
+	public static function load_template_sitemap_image() {
 		load_template( XMLSIF_PLUGIN_DIR . '/feed-sitemap-image.php' );
 	}
 
 	// REWRITES //
 	// add sitemap rewrite rules
-	function rewrite($wp_rewrite) {
+	public static function rewrite($wp_rewrite) {
 		$feed_rules = array('sitemap-image.xml$' => $wp_rewrite->index . '?feed=sitemap-image',);
 		$wp_rewrite->rules = $feed_rules + $wp_rewrite->rules;
 	}
 
 	// DE-ACTIVATION
-	function deactivate() {
+	public static function deactivate() {
 		remove_filter('generate_rewrite_rules', array(__CLASS__, 'rewrite') );
 		delete_option('gn-sitemap-image-feed-mu-version');
 		global $wp_rewrite;
@@ -57,7 +57,7 @@ class XMLSitemapImageFeed {
 	// MULTI-LANGUAGE PLUGIN FILTERS
 
 	// qTranslate
-	function qtranslate($input) {
+	public static function qtranslate($input) {
 		global $q_config;
 
 		if (is_array($input)) // got an array? return one!
@@ -73,7 +73,7 @@ class XMLSitemapImageFeed {
 	}
 
 	// xLanguage
-	function xlanguage($input) {
+	public static function xlanguage($input) {
 		global $xlanguage;
 	
 		if (is_array($input)) // got an array? return one!
@@ -88,7 +88,7 @@ class XMLSitemapImageFeed {
 		return $return;
 	}
 
-	function init() {
+	public static function init() {
 		// FLUSH RULES after (site wide) plugin upgrade
 		if (get_option('gn-sitemap-image-feed-mu-version') != XMLSIF_VERSION) {
 			update_option('gn-sitemap-image-feed-mu-version', XMLSIF_VERSION);
