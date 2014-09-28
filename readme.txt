@@ -4,7 +4,7 @@ Donate link: http://www.artprojectgroup.es/tienda/donacion
 Tags: Google, Google Image, Google Image Sitemap, sitemap, sitemap-image.xml, qTranslate, Media File Renamer
 Requires at least: 2.6
 Tested up to: 4.0
-Stable tag: 1.1
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -66,6 +66,8 @@ Si, se han descrito errores al utilizarlo conjuntamente con el plugin **Google X
 1. Captura de pantalla de sitemap-image.xml.
 
 == Changelog ==
+= 1.1.1 =
+* Añadido borrado de caché al publicar nuevo contenido.
 = 1.1 =
 * Arreglo de error que provocaba un mensaje de error en versiones superiores a la 5.2 de PHP.
 = 1.0.1 =
@@ -100,6 +102,8 @@ Si, se han descrito errores al utilizarlo conjuntamente con el plugin **Google X
 * Versión inicial.
 
 == Upgrade Notice ==
+= 1.1.1 =
+* Añadido borrado de caché al publicar nuevo contenido.
 = 1.1 =
 * Arreglo de error que provocaba un mensaje de error en versiones superiores a la 5.2 de PHP.
 = 1.0.1 =
