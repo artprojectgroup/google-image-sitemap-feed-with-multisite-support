@@ -73,6 +73,22 @@ function xml_image_sitemap_enlaces( $enlaces, $archivo ) {
 }
 add_filter( 'plugin_row_meta', 'xml_image_sitemap_enlaces', 10, 2 );
 
+//Añade el botón de configuración
+function xml_image_sitemap_enlace_de_ajustes( $enlaces ) { 
+	global $xml_image_sitemap;
+
+	$enlaces_de_ajustes = array(
+		'<a href="' . $xml_image_sitemap['soporte'] . '" title="' . __( 'Support of ', 'xml_image_sitemap' ) . $xml_image_sitemap['plugin'] .'">' . __( 'Support', 'apg_shipping' ) . '</a>'
+	);
+	foreach( $enlaces_de_ajustes as $enlace_de_ajustes )	{
+		array_unshift( $enlaces, $enlace_de_ajustes );
+	}
+	
+	return $enlaces; 
+}
+$plugin = DIRECCION_xml_image_sitemap; 
+add_filter( "plugin_action_links_$plugin", 'xml_image_sitemap_enlace_de_ajustes' );
+
 //Constantes
 define( 'XMLSIF_VERSION', '1.2' );
 define( 'XMLSIF_MEMORY_LIMIT', '128M' );
