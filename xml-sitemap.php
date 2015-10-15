@@ -1,13 +1,13 @@
 <?php
 /*
 Plugin Name: Google Image Sitemap Feed With Multisite Support
-Version: 1.2
+Version: 1.2.0.1
 Plugin URI: http://wordpress.org/plugins/google-image-sitemap-feed-with-multisite-support/
 Description: Dynamically generates a Google Image Sitemap and automatically submit updates to Google and Bing. No settings required. Compatible with WordPress Multisite installations. Created from <a href="http://profiles.wordpress.org/users/timbrd/" target="_blank">Tim Brandon</a> <a href="http://wordpress.org/plugins/google-news-sitemap-feed-with-multisite-support/" target="_blank"><strong>Google News Sitemap Feed With Multisite Support</strong></a> and <a href="http://profiles.wordpress.org/labnol/" target="_blank">Amit Agarwal</a> <a href="http://wordpress.org/plugins/google-image-sitemap/" target="_blank"><strong>Google XML Sitemap for Images</strong></a> plugins.
 Author URI: http://www.artprojectgroup.es/
 Author: Art Project Group
 Requires at least: 2.6
-Tested up to: 4.3
+Tested up to: 4.3.1
 
 Text Domain: xml_image_sitemap
 Domain Path: /i18n/languages
@@ -90,7 +90,7 @@ $plugin = DIRECCION_xml_image_sitemap;
 add_filter( "plugin_action_links_$plugin", 'xml_image_sitemap_enlace_de_ajustes' );
 
 //Constantes
-define( 'XMLSIF_VERSION', '1.2' );
+define( 'XMLSIF_VERSION', '1.2.0.1' );
 define( 'XMLSIF_MEMORY_LIMIT', '128M' );
 
 if ( file_exists( dirname( __FILE__ ) . '/google-image-sitemap-feed-mu' ) ) {

@@ -3,8 +3,8 @@ Contributors: artprojectgroup
 Donate link: http://www.artprojectgroup.es/tienda/donacion
 Tags: Google, Google Image, Google Image Sitemap, sitemap, sitemap-image.xml, qTranslate, Media File Renamer
 Requires at least: 2.6
-Tested up to: 4.3
-Stable tag: 1.2
+Tested up to: 4.3.1
+Stable tag: 1.2.0.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -29,6 +29,13 @@ Se recomienda el uso de **Google Image Sitemap Feed With Multisite Support** jun
 
 = Muy importante =
 Se han descrito errores al utilizarlo conjuntamente con la última versión de **Google XML Sitemaps** con soporte para WordPress multisitio. Los errores están descritos en [¿Cómo arreglar la incompatibilidad de Google XML Sitemaps con nuestros plugins?](http://www.artprojectgroup.es/como-arreglar-la-incompatibilidad-de-google-xml-sitemaps-con-nuestros-plugins) donde encontrarás toda la información necesaria para solucionar la incompatibilidad detectada.
+
+= Traducciones =
+* Español ([**Art Project Group**](http://www.artprojectgroup.es/)).
+* English ([**Art Project Group**](http://www.artprojectgroup.es/)).
+
+= Soporte técnico =
+**Art Project Group** te ofrece [**Soporte técnico**](http://www.artprojectgroup.es/tienda/soporte-tecnico) para configurar o instalar ***Google Image Sitemap Feed With Multisite Support***. 
 
 = Más información =
 En nuestro sitio web oficial puede obtener más información sobre [**Google Image Sitemap Feed With Multisite Support**](http://www.artprojectgroup.es/plugins-para-wordpress/google-image-sitemap-feed-with-multisite-support). 
@@ -66,6 +73,9 @@ Si, se han descrito errores al utilizarlo conjuntamente con el plugin **Google X
 1. Captura de pantalla de sitemap-image.xml.
 
 == Changelog ==
+= 1.2.0.1 =
+* Actualización del paquete de fuentes. Nuevo icono de Google+.
+* Actualización de las traducciones.
 = 1.2 =
 * Modificación de la estructura interna del plugin para ajustarse a los estándares de WordPress.
 = 1.1.1 =
@@ -104,6 +114,9 @@ Si, se han descrito errores al utilizarlo conjuntamente con el plugin **Google X
 * Versión inicial.
 
 == Upgrade Notice ==
+= 1.2.0.1 =
+* Actualización del paquete de fuentes. Nuevo icono de Google+.
+* Actualización de las traducciones.
 = 1.2 =
 * Modificación de la estructura interna del plugin para ajustarse a los estándares de WordPress.
 = 1.1.1 =
@@ -140,8 +153,8 @@ Si, se han descrito errores al utilizarlo conjuntamente con el plugin **Google X
 * Actualización de los textos de información.
 
 ==Traducciones ==
-* *English*: by **Art Project Group** (default language).
-* *Español*: por **Art Project Group**.
+* *English*: by [**Art Project Group**](http://www.artprojectgroup.es/) (default language).
+* *Español*: por [**Art Project Group**](http://www.artprojectgroup.es/).
 
 == ¿Por qué está esta página en español? ==
 Mientras WordPress no nos permita a los desarrolladores realizar esta página en más de un idioma, elegiremos siempre el español.
