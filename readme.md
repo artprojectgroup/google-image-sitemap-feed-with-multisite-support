@@ -7,7 +7,7 @@ Tags: Google, Google Image, Google Image Sitemap, sitemap, sitemap-image.xml, qT
 
 Requires at least: 2.6
 
-Tested up to: 4.4.2
+Tested up to: 4.5
 
 Stable tag: 1.2.0.2
 
