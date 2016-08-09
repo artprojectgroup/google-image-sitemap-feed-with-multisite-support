@@ -7,7 +7,7 @@ Description: Dynamically generates a Google Image Sitemap and automatically subm
 Author URI: http://www.artprojectgroup.es/
 Author: Art Project Group
 Requires at least: 2.6
-Tested up to: 4.5
+Tested up to: 4.6
 
 Text Domain: xml_image_sitemap
 Domain Path: /i18n/languages
