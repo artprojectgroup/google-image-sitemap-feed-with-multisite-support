@@ -3,8 +3,8 @@ Contributors: artprojectgroup
 Donate link: https://artprojectgroup.es/tienda/donacion
 Tags: Google, Google Image, Google Image Sitemap, sitemap, sitemap-image.xml, qTranslate, Media File Renamer
 Requires at least: 2.6
-Tested up to: 4.6
-Stable tag: 1.2.0.2
+Tested up to: 5.0
+Stable tag: 1.2.0.3
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -81,6 +81,8 @@ Si necesitas ayuda para configurar o instalar **Google Image Sitemap Feed With M
 1. Captura de pantalla de sitemap-image.xml.
 
 == Changelog ==
+= 1.2.0.3 =
+* Actualización de enlaces y pequeñas actualizaciones.
 = 1.2.0.2 =
 * Actualización de enlaces de soporte y pequeñas actualizaciones.
 = 1.2.0.1 =
@@ -124,8 +126,8 @@ Si necesitas ayuda para configurar o instalar **Google Image Sitemap Feed With M
 * Versión inicial.
 
 == Upgrade Notice ==
-= 1.2.0.2 =
-* Actualización de enlaces de soporte y pequeñas actualizaciones.
+= 1.2.0.3 =
+* Actualización de enlaces y pequeñas actualizaciones.
 
 ==Traducciones ==
 * *English*: by [**Art Project Group**](https://artprojectgroup.es/) (default language).

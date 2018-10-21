@@ -7,9 +7,9 @@ Tags: Google, Google Image, Google Image Sitemap, sitemap, sitemap-image.xml, qT
 
 Requires at least: 2.6
 
-Tested up to: 4.6
+Tested up to: 5.0
 
-Stable tag: 1.2.0.2
+Stable tag: 1.2.0.3
 
 License: GPLv3
 
@@ -85,62 +85,65 @@ Si necesitas ayuda para configurar o instalar **Google Image Sitemap Feed With M
 *En ningún caso **Art Project Group** proporciona ningún tipo de soporte técnico gratuito.*
 
 ## Changelog
-###1.2.0.2
+### 1.2.0.3
+* Actualización de enlaces y pequeñas actualizaciones.
+
+### 1.2.0.2
 * Actualización de enlaces de soporte y pequeñas actualizaciones.
 
-###1.2.0.1
+### 1.2.0.1
 * Actualización del paquete de fuentes. Nuevo icono de Google+.
 * Actualización de las traducciones.
 
-###1.2
+### 1.2
 * Modificación de la estructura interna del plugin para ajustarse a los estándares de WordPress.
 
 ###1.1.1
 * Añadido borrado de caché al publicar nuevo contenido.
 
-###1.1
+### 1.1
 * Arreglo de error que provocaba un mensaje de error en versiones superiores a la 5.2 de PHP.
 
-###1.0.1
+### 1.0.1
 * Arreglo de error que provocaba que no se mostraran las URLs correctas en las entradas con múltiples imágenes.
 
-###1.0
+### 1.0
 * Soporte del plugin [Media File Renamer](http://wordpress.org/plugins/media-file-renamer/).
 
-###0.9
+### 0.9
 * Arreglo de error que borraba toda la configuración al desactivar el plugin.
 * Corrección menor que evita la aparición de un código de error al recopilar información sobre el plugin.
 * Uso de la API Transients de WordPress para mejorar las consultas.
 
-###0.8.1
+### 0.8.1
 * Cambio del enlace de donación.
 
-###0.8
+### 0.8
 * Añadida nueva función que limpia la base de datos al desinstalar el plugin.
 
-###0.7
+### 0.7
 * Arreglo en la codificación de las entidades RSS.
 
 ###0.6
 * Arreglos menores en el código.
 
-###0.5
+### 0.5
 * Actualización de las hojas de estilo acorde al nuevo WordPress 8.
 * Arreglo de pequeños errores en el código.
 
-###0.4
+### 0.4
 * Inclusión de nuevos botones y enlaces.
 
-###0.3
+### 0.3
 * Pequeños arreglos de código.
 * Pequeño arreglo de la traducción.
 
-###0.2
+### 0.2
 * Pequeñas modificaciones y arreglos de código.
 * Inclusión de enlaces.
 * Actualización de los textos de información.
 
-###0.1
+### 0.1
 * Versión inicial.
 
 ## Traducciones
