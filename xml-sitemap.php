@@ -1,13 +1,13 @@
 <?php
 /*
 Plugin Name: Google Image Sitemap Feed With Multisite Support
-Version: 1.2.0.2
+Version: 1.2.0.3
 Plugin URI: http://wordpress.org/plugins/google-image-sitemap-feed-with-multisite-support/
 Description: Dynamically generates a Google Image Sitemap and automatically submit updates to Google and Bing. No settings required. Compatible with WordPress Multisite installations. Created from <a href="http://profiles.wordpress.org/users/timbrd/" target="_blank">Tim Brandon</a> <a href="http://wordpress.org/plugins/google-news-sitemap-feed-with-multisite-support/" target="_blank"><strong>Google News Sitemap Feed With Multisite Support</strong></a> and <a href="http://profiles.wordpress.org/labnol/" target="_blank">Amit Agarwal</a> <a href="http://wordpress.org/plugins/google-image-sitemap/" target="_blank"><strong>Google XML Sitemap for Images</strong></a> plugins.
-Author URI: http://www.artprojectgroup.es/
+Author URI: https://artprojectgroup.es/
 Author: Art Project Group
 Requires at least: 2.6
-Tested up to: 4.6
+Tested up to: 5.0
 
 Text Domain: xml_image_sitemap
 Domain Path: /i18n/languages
@@ -46,11 +46,11 @@ define( 'DIRECCION_xml_image_sitemap', plugin_basename( __FILE__ ) );
 $xml_image_sitemap = array( 	
 	'plugin' 		=> 'Google Image Sitemap Feed With Multisite Support', 
 	'plugin_uri' 	=> 'google-image-sitemap-feed-with-multisite-support', 
-	'donacion' 		=> 'http://www.artprojectgroup.es/tienda/donacion',
-	'soporte' 		=> 'http://www.wpprojectgroup.es/tienda/ticket-de-soporte',
-	'plugin_url' 	=> 'http://www.artprojectgroup.es/plugins-para-wordpress/google-image-sitemap-feed-with-multisite-support', 
+	'donacion' 		=> 'https://artprojectgroup.es/tienda/donacion',
+	'soporte' 		=> 'https://artprojectgroup.es/tienda/ticket-de-soporte',
+	'plugin_url' 	=> 'https://artprojectgroup.es/plugins-para-wordpress/google-image-sitemap-feed-with-multisite-support', 
 	'ajustes' 		=> '', 
-	'puntuacion' 	=> 'http://wordpress.org/support/view/plugin-reviews/google-image-sitemap-feed-with-multisite-support'
+	'puntuacion' 	=> 'https://wordpress.org/support/view/plugin-reviews/google-image-sitemap-feed-with-multisite-support'
  );
 
 //Carga el idioma
@@ -90,7 +90,7 @@ $plugin = DIRECCION_xml_image_sitemap;
 add_filter( "plugin_action_links_$plugin", 'xml_image_sitemap_enlace_de_ajustes' );
 
 //Constantes
-define( 'XMLSIF_VERSION', '1.2.0.2' );
+define( 'XMLSIF_VERSION', '1.2.0.3' );
 define( 'XMLSIF_MEMORY_LIMIT', '128M' );
 
 if ( file_exists( dirname( __FILE__ ) . '/google-image-sitemap-feed-mu' ) ) {
@@ -118,7 +118,7 @@ function xml_image_sitemap_plugin( $nombre ) {
 	);
 	$respuesta = get_transient( 'xml_image_sitemap_plugin' );
 	if ( false === $respuesta ) {
-		$respuesta = wp_remote_post( 'http://api.wordpress.org/plugins/info/1.0/', array( 
+		$respuesta = wp_remote_post( 'https://api.wordpress.org/plugins/info/1.0/', array( 
 			'body' => $consulta)
 		);
 		set_transient( 'xml_image_sitemap_plugin', $respuesta, 24 * HOUR_IN_SECONDS );

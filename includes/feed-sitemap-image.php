@@ -6,8 +6,8 @@
  */
 
 //Procesa correctamente las entidades del RSS
-$entity_custom_from = false; 
-$entity_custom_to = false;
+$entity_custom_from	= false; 
+$entity_custom_to	= false;
 
 function sitemap_image_html_entity( $data ) {
 	global $entity_custom_from, $entity_custom_to;
@@ -41,39 +41,41 @@ status_header( '200' ); // force header( 'HTTP/1.1 200 OK' ) for sites without p
 header( 'Content-Type: text/xml; charset=' . get_bloginfo( 'charset' ), true );
 
 echo '<?xml version="1.0" encoding="' . get_bloginfo( 'charset' ) . '"?>
-<!-- Created by Google Image Sitemap Feed With Multisite Support by Art Project Group (http://www.artprojectgroup.es/plugins-para-wordpress/google-image-sitemap-feed-with-multisite-support) -->
+<!-- Created by Google Image Sitemap Feed With Multisite Support by Art Project Group (https://artprojectgroup.es/plugins-para-wordpress/google-image-sitemap-feed-with-multisite-support) -->
 <!-- generated-on="' . date( 'Y-m-d\TH:i:s+00:00' ) . '" -->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">' . PHP_EOL;
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9/" xmlns:image="https://www.google.com/schemas/sitemap-image/1.1/">' . PHP_EOL;
 
-$entradas = get_transient( 'xml_sitemap_image' );
-if ( $entradas === false ) {
-     $entradas = $wpdb->get_results( "SELECT ID, post_title, post_excerpt, post_parent FROM $wpdb->posts WHERE post_type = 'attachment' AND post_mime_type like 'image%' AND post_parent > 0 ORDER BY post_date desc" ); //Consulta
-     set_transient( 'xml_sitemap_image', $entradas, 30 * DAY_IN_SECONDS );
+$imagenes = get_transient( 'xml_sitemap_image' );
+if ( $imagenes === false ) {
+     $imagenes = $wpdb->get_results( "SELECT ID, post_title, post_excerpt, post_content, post_parent FROM $wpdb->posts WHERE post_type = 'attachment' AND post_mime_type like 'image%' AND post_parent > 0 ORDER BY post_date desc" ); //Consulta
+     set_transient( 'xml_sitemap_image', $imagenes, 30 * DAY_IN_SECONDS );
 }
 
 global $wp_query;
-$wp_query->is_404 = false;	// force is_404(  ) condition to false when on site without posts
-$wp_query->is_feed = true;	// force is_feed(  ) condition to true so WP Super Cache includes the sitemap in its feeds cache
-$dominio = $_SERVER['SERVER_NAME'];
 
-if ( empty( $entradas ) ) {
+$wp_query->is_404	= false;// force is_404(  ) condition to false when on site without posts
+$wp_query->is_feed	= true;	// force is_feed(  ) condition to true so WP Super Cache includes the sitemap in its feeds cache
+$dominio			= $_SERVER['SERVER_NAME'];
+
+if ( empty( $imagenes ) ) {
 	echo "</urlset>";
 	
 	return false;
 } else {
-	$entrada_anterior = $primera_entrada = false;
-	foreach ( $entradas as $entrada ) {
-		$entrada_actual= $entrada->post_parent;
-		$url_de_imagen = wp_get_attachment_url( $entrada->ID );
+	$entrada_anterior	= false;
+	$primera_imagen	= false;
+	foreach ( $imagenes as $imagen ) {
+		$entrada_actual= $imagen->post_parent;
+		$url_de_imagen = wp_get_attachment_url( $imagen->ID );
 		if ( $entrada_actual != $entrada_anterior ) {
 			$url = get_permalink( $entrada_actual );
 			if ( !$url ) {
 				$url = "http://" . $_SERVER['SERVER_NAME'] . "/";
 			}
 			
-			if ( $primera_entrada == true ) {
+			if ( $primera_imagen == true ) {
 				echo "\t" . '</url>' . PHP_EOL;
-				$primera_entrada = false;
+				$primera_imagen = false;
 			}
 			
 			echo "\t" . '<url>' . PHP_EOL;
@@ -86,26 +88,26 @@ if ( empty( $entradas ) ) {
 				echo "\t\t\t" . '<image:loc>' . preg_replace( '/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}/', $dominio, $url_de_imagen, 1 ) . '</image:loc>' . PHP_EOL;
 			}
 			
-			if ( $entrada->post_excerpt ) {
-				echo "\t\t\t" . '<image:caption>' . sitemap_image_html_entity( htmlspecialchars( $entrada->post_excerpt ) ) . '</image:caption>' . PHP_EOL;
+			if ( $imagen->post_content ) {
+				echo "\t\t\t" . '<image:caption>' . sitemap_image_html_entity( htmlspecialchars( $imagen->post_content ) ) . '</image:caption>' . PHP_EOL;
 			}
-			
-			if ( $entrada->post_title ) {
-				echo "\t\t\t" . '<image:title>' . sitemap_image_html_entity( htmlspecialchars( $entrada->post_title ) ) . '</image:title>' . PHP_EOL;
+
+			if ( $imagen->post_title ) {
+				echo "\t\t\t" . '<image:title>' . sitemap_image_html_entity( htmlspecialchars( $imagen->post_title ) ) . '</image:title>' . PHP_EOL;
 			}
 			
 			echo "\t\t" . '</image:image>' . PHP_EOL;
 			
-			$primera_entrada = true;
+			$primera_imagen = true;
 			$entrada_anterior = $entrada_actual;
 		} else {
 			echo "\t\t" . '<image:image>' . PHP_EOL;
 			echo "\t\t\t" . '<image:loc>' . $url_de_imagen . '</image:loc>' . PHP_EOL;
-			if ( $entrada->post_excerpt ) {
-				echo "\t\t\t" . '<image:caption>' . sitemap_image_html_entity( htmlspecialchars( $entrada->post_excerpt ) ) . '</image:caption>' . PHP_EOL;
+			if ( $imagen->post_content ) {
+				echo "\t\t\t" . '<image:caption>' . sitemap_image_html_entity( htmlspecialchars( $imagen->post_content ) ) . '</image:caption>' . PHP_EOL;
 			}
-			if ( $entrada->post_title ) {
-				echo "\t\t\t" . '<image:title>' . sitemap_image_html_entity( htmlspecialchars( $entrada->post_title ) ) . '</image:title>' . PHP_EOL;
+			if ( $imagen->post_title ) {
+				echo "\t\t\t" . '<image:title>' . sitemap_image_html_entity( htmlspecialchars( $imagen->post_title ) ) . '</image:title>' . PHP_EOL;
 			}
 			echo "\t\t" . '</image:image>' . PHP_EOL;
 		}
@@ -114,4 +116,3 @@ if ( empty( $entradas ) ) {
 }
 
 echo "</urlset>";
-?>

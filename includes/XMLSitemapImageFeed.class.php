@@ -12,11 +12,12 @@ class XMLSitemapImageFeed {
 			add_action( 'init', array( __CLASS__, 'init' ) ); // INIT
 			add_action( 'do_feed_sitemap-image', array( __CLASS__, 'load_template_sitemap_image' ), 10, 1 ); // FEED
 			add_filter( 'generate_rewrite_rules', array( __CLASS__, 'rewrite' ) ); // REWRITES
-			add_action( 'enviar_ping', array( __CLASS__, 'EnviaPing' ), 10, 1 ); //Envía el ping a Google y Bing
+			add_action( 'enviar_ping', array( __CLASS__, 'Envia_Ping' ), 10, 1 ); //Envía el ping a Google y Bing
 			//Actúa cuando se publica una página, una entrada o se borra una entrada
-			add_action( 'publish_post', array( __CLASS__, 'ProgramaPing' ), 999, 1 );
-			add_action( 'publish_page', array( __CLASS__, 'ProgramaPing' ), 9999, 1 );
-			add_action( 'delete_post', array( __CLASS__, 'ProgramaPing' ), 9999, 1 );
+			add_action( 'publish_post', array( __CLASS__, 'Programa_Ping' ), 999, 1 );
+			add_action( 'publish_page', array( __CLASS__, 'Programa_Ping' ), 999, 1 );
+			add_action( 'delete_post', array( __CLASS__, 'Programa_Ping' ), 999, 1 );
+			add_action( 'pre_post_update', array( __CLASS__, 'Programa_Ping' ), 999, 1 );
 		}
 		register_deactivation_hook( XMLSIF_PLUGIN_DIR . '/xml-sitemap.php', array( __CLASS__, 'deactivate' ) ); // DE-ACTIVATION
 	}
@@ -100,16 +101,16 @@ class XMLSitemapImageFeed {
 	}
 
 	//Programa el ping a los buscadores web
-	public static function ProgramaPing() {
+	public static function Programa_Ping() {
 		delete_transient( 'xml_sitemap_image' );
 		wp_schedule_single_event( time(),'enviar_ping' );
 	}
 
 	//Envía el ping a Google y Bing
-	public static function EnviaPing() {
+	public static function Envia_Ping() {
 		$ping = array( 
-			"http://www.google.com/webmasters/sitemaps/ping?sitemap=" . urlencode( home_url( '/' ) . "sitemap-image.xml" ), 
-			"http://www.bing.com/webmaster/ping.aspx?siteMap=" . urlencode( home_url( '/' ) . "sitemap-image.xml" ) 
+			"https://www.google.com/webmasters/sitemaps/ping?sitemap=" . urlencode( home_url( '/' ) . "sitemap-image.xml" ), 
+			"https://www.bing.com/webmaster/ping.aspx?siteMap=" . urlencode( home_url( '/' ) . "sitemap-image.xml" ) 
 		);
 		$options['timeout'] = 10;
 		foreach( $ping as $url ) {
