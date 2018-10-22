@@ -43,11 +43,11 @@ header( 'Content-Type: text/xml; charset=' . get_bloginfo( 'charset' ), true );
 echo '<?xml version="1.0" encoding="' . get_bloginfo( 'charset' ) . '"?>
 <!-- Created by Google Image Sitemap Feed With Multisite Support by Art Project Group (https://artprojectgroup.es/plugins-para-wordpress/google-image-sitemap-feed-with-multisite-support) -->
 <!-- generated-on="' . date( 'Y-m-d\TH:i:s+00:00' ) . '" -->
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9/" xmlns:image="https://www.google.com/schemas/sitemap-image/1.1/">' . PHP_EOL;
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">' . PHP_EOL;
 
 $imagenes = get_transient( 'xml_sitemap_image' );
 if ( $imagenes === false ) {
-     $imagenes = $wpdb->get_results( "SELECT ID, post_title, post_excerpt, post_content, post_parent FROM $wpdb->posts WHERE post_type = 'attachment' AND post_mime_type like 'image%' AND post_parent > 0 ORDER BY post_date desc" ); //Consulta
+     $imagenes = $wpdb->get_results( "SELECT P1.ID, P1.post_title, P1.post_excerpt, P1.post_content, P1.post_parent FROM $wpdb->posts P1 LEFT JOIN $wpdb->posts P2 ON P1.post_parent = P2.ID WHERE P1.post_type = 'attachment' AND P1.post_mime_type like 'image%' AND P1.post_parent > 0 and P2.post_status = 'publish' ORDER BY P1.post_date desc" ); //Consulta
      set_transient( 'xml_sitemap_image', $imagenes, 30 * DAY_IN_SECONDS );
 }
 

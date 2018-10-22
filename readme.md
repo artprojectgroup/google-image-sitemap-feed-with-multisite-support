@@ -9,7 +9,7 @@ Requires at least: 2.6
 
 Tested up to: 5.0
 
-Stable tag: 1.2.0.3
+Stable tag: 1.2.0.4
 
 License: GPLv3
 
@@ -85,6 +85,9 @@ Si necesitas ayuda para configurar o instalar **Google Image Sitemap Feed With M
 *En ningún caso **Art Project Group** proporciona ningún tipo de soporte técnico gratuito.*
 
 ## Changelog
+### 1.2.0.4
+* Actualización de la consulta SQL.
+
 ### 1.2.0.3
 * Actualización de enlaces y pequeñas actualizaciones.
 
