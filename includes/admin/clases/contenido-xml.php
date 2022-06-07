@@ -40,7 +40,7 @@ function sitemap_image_html_entity( $data ) {
 //Obtiene el listado de todas las imágenes
 $imagenes   = get_transient( 'xml_sitemap_image' );
 if ( $imagenes === false ) {
-    $imagenes = $wpdb->get_results( "SELECT P1.ID, P1.post_title, P1.post_excerpt, P1.post_content, P1.post_parent FROM $wpdb->posts P1 LEFT JOIN $wpdb->posts P2 ON P1.post_parent = P2.ID WHERE P1.post_type = 'attachment' AND P1.post_mime_type like 'image%' AND P1.post_parent > 0 and P2.post_status = 'publish' ORDER BY P1.post_date desc" ); //Consulta
+    $imagenes = $wpdb->get_results( "SELECT P1.ID, P1.post_parent FROM $wpdb->posts P1 LEFT JOIN $wpdb->posts P2 ON P1.post_parent = P2.ID WHERE P1.post_type = 'attachment' AND P1.post_mime_type like 'image%' AND P1.post_parent > 0 and P2.post_status = 'publish' ORDER BY P1.post_date desc" ); //Consulta
     set_transient( 'xml_sitemap_image', $imagenes, 30 * DAY_IN_SECONDS );
     APGSitemapImage::desactivar();
 }
