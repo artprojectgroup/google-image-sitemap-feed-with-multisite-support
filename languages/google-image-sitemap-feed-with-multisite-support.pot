@@ -1,0 +1,82 @@
+# Loco Gettext template
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Google Image Sitemap Feed With Multisite Support\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-07 17:17+0000\n"
+"POT-Revision-Date: Thu Oct 15 2015 10:15:11 GMT+0200 (CEST)\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ../..\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Generator: Loco https://localise.biz/"
+
+#. Name of the plugin
+msgid "APG Google Image Sitemap Feed"
+msgstr ""
+
+#. Author of the plugin
+msgid "Art Project Group"
+msgstr ""
+
+#: includes/admin/funciones-apg.php:32
+msgid "Contact with us by "
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Dynamically generates a Google Image Sitemap and automatically submit "
+"updates to Google and Bing. No settings required. Compatible with WordPress "
+"Multisite installations. Created from <a href=\"http://profiles.wordpress."
+"org/users/timbrd/\" target=\"_blank\">Tim Brandon</a> <a href=\"http:"
+"//wordpress.org/plugins/google-news-sitemap-feed-with-multisite-support/\" "
+"target=\"_blank\"><strong>Google News Sitemap Feed With Multisite "
+"Support</strong></a> and <a href=\"http://profiles.wordpress.org/labnol/\" "
+"target=\"_blank\">Amit Agarwal</a> <a href=\"http://wordpress."
+"org/plugins/google-image-sitemap/\" target=\"_blank\"><strong>Google XML "
+"Sitemap for Images</strong></a> plugins."
+msgstr ""
+
+#: includes/admin/funciones-apg.php:30
+msgid "Follow us on "
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://artprojectgroup.es/"
+msgstr ""
+
+#. URI of the plugin
+msgid ""
+"https://wordpress.org/plugins/google-image-sitemap-feed-with-multisite-"
+"support/"
+msgstr ""
+
+#: includes/admin/funciones-apg.php:28
+msgid "Make a donation by "
+msgstr ""
+
+#: includes/admin/funciones-apg.php:31
+msgid "More plugins on "
+msgstr ""
+
+#: includes/admin/funciones-apg.php:52 includes/admin/funciones-apg.php:65
+#, php-format
+msgid "Please, rate %s:"
+msgstr ""
+
+#: includes/admin/funciones-apg.php:52
+msgid "Unknown rating"
+msgstr ""
