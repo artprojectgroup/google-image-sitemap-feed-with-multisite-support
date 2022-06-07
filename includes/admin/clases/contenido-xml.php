@@ -5,38 +5,6 @@ Genera la plantilla XML
 
 global $maximo_imagenes;
 
-//Procesa correctamente las entidades del RSS
-$entity_custom_from	= false; 
-$entity_custom_to	= false;
-
-function sitemap_image_html_entity( $data ) {
-	global $entity_custom_from, $entity_custom_to;
-	
-	if ( ! is_array( $entity_custom_from ) || ! is_array( $entity_custom_to ) ) {
-		$array_position = 0;
-		foreach ( get_html_translation_table( HTML_ENTITIES ) as $key => $value ) {
-			switch ( $value ) {
-				case '&nbsp;':
-					break;
-				case '&gt;':
-				case '&lt;':
-				case '&quot;':
-				case '&apos;':
-				case '&amp;':
-					$entity_custom_from[$array_position]   = $key; 
-					$entity_custom_to[$array_position]     = $value; 
-					$array_position++; 
-					break; 
-				default: 
-					$entity_custom_from[$array_position]   = $value; 
-					$entity_custom_to[$array_position]     = $key; 
-					$array_position++; 
-			} 
-		}
-	}
-	return str_replace( $entity_custom_from, $entity_custom_to, $data ); 
-}
-
 //Obtiene el listado de todas las imágenes
 $imagenes   = get_transient( 'xml_sitemap_image' );
 if ( $imagenes === false ) {
