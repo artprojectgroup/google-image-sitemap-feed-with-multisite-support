@@ -2,7 +2,6 @@
 /*
 Genera la plantilla XML
 */
-
 global $maximo_imagenes;
 
 //Obtiene el listado de todas las imágenes
@@ -21,9 +20,9 @@ header( 'Content-Type: text/xml; charset=' . get_bloginfo( 'charset' ), true );
 $numero_feed        = preg_replace( '/[^0-9]/', '', $wp->request );
 if ( count( $imagenes ) > $maximo_imagenes && ! $numero_feed ) {
     echo '<?xml version="1.0" encoding="' . get_bloginfo( 'charset' ) . '"?>
-<!-- Created by APG Google Image Sitemap Feed by Art Project Group (https://artprojectgroup.es/plugins-para-wordpress/google-image-sitemap-feed-with-multisite-support) -->
+<!-- Created by APG Google Image Sitemap Feed by Art Project Group (https://artprojectgroup.es/plugins-para-wordpress/apg-google-image-sitemap-feed) -->
 <!-- generated-on="' . date( 'Y-m-d\TH:i:s+00:00' ) . '" -->
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
+<sitemapindex xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">';
     for ( $i = 1; $i <= ceil( count( $imagenes ) / $maximo_imagenes ); $i++ ) {
         echo '<sitemap>
     <loc>' . home_url( '/' ) . "sitemap-image-$i.xml" . '</loc>
@@ -36,9 +35,9 @@ if ( count( $imagenes ) > $maximo_imagenes && ! $numero_feed ) {
 
 //Inicia la plantilla
 echo '<?xml version="1.0" encoding="' . get_bloginfo( 'charset' ) . '"?>
-<!-- Created by APG Google Image Sitemap Feed by Art Project Group (https://artprojectgroup.es/plugins-para-wordpress/google-image-sitemap-feed-with-multisite-support) -->
+<!-- Created by APG Google Image Sitemap Feed by Art Project Group (https://artprojectgroup.es/plugins-para-wordpress/apg-google-image-sitemap-feed) -->
 <!-- generated-on="' . date( 'Y-m-d\TH:i:s+00:00' ) . '" -->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">' . PHP_EOL;
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="https://www.google.com/schemas/sitemap-image/1.1">' . PHP_EOL;
 
 global $wp_query;
 
@@ -65,7 +64,7 @@ if ( empty( $imagenes ) ) {
 		if ( $entrada_actual != $entrada_anterior ) {
 			$url = get_permalink( $entrada_actual );
 			if ( ! $url ) {
-				$url = "http://" . $_SERVER['SERVER_NAME'] . "/";
+				$url = "https://" . $_SERVER['SERVER_NAME'] . "/";
 			}
 			
 			if ( $primera_imagen == true ) {

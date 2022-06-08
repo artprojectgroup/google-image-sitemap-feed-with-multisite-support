@@ -5,7 +5,7 @@ $apg_image_sitemap = array(
 	'plugin_uri' 	=> 'google-image-sitemap-feed-with-multisite-support', 
 	'donacion' 		=> 'https://artprojectgroup.es/tienda/donacion',
 	'soporte' 		=> 'https://artprojectgroup.es/tienda/ticket-de-soporte',
-	'plugin_url' 	=> 'https://artprojectgroup.es/plugins-para-wordpress/google-image-sitemap-feed-with-multisite-support', 
+	'plugin_url' 	=> 'https://artprojectgroup.es/plugins-para-wordpress/apg-google-image-sitemap-feed', 
 	'ajustes' 		=> '', 
 	'puntuacion' 	=> 'https://wordpress.org/support/view/plugin-reviews/google-image-sitemap-feed-with-multisite-support'
  );

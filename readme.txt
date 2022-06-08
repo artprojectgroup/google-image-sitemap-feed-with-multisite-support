@@ -4,21 +4,21 @@ Donate link: https://artprojectgroup.es/tienda/donacion
 Tags: Google, Google Image, Google Image Sitemap, sitemap, sitemap-image.xml, qTranslate, Media File Renamer
 Requires at least: 2.6
 Tested up to: 6.1
-Stable tag: 2.0
+Stable tag: 2.0.1
 License: GPLv3
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 Genera dinámicamente el archivo sitemap-image.xml, un mapa de sitio de imágenes para Google. No requiere ningún tipo de configuración.
 
 == Description ==
-[*Español*](http://wordpress.org/plugins/google-image-sitemap-feed-with-multisite-support/) - [*English*](http://goo.gl/u9zMFp) - [*Italiano*](http://goo.gl/ZcndP4) - [*Français*](http://goo.gl/yyWCYT) - [*Deutsch*](http://goo.gl/1mJWrO) 
+[*Español*](https://wordpress.org/plugins/google-image-sitemap-feed-with-multisite-support/) - [*English*](https://goo.gl/u9zMFp) - [*Italiano*](https://goo.gl/ZcndP4) - [*Français*](https://goo.gl/yyWCYT) - [*Deutsch*](https://goo.gl/1mJWrO) 
 
 **APG Google Image Sitemap Feed** genera dinámicamente un mapa de sitio de imágenes para Google creando un archivo `sitemap-image.xml` virtual. 
 
 = Características =
 * No requiere ningún tipo de configuración, por lo que funciona de forma totalmente autónoma y automática.
 * Es totalmente compatible con instalaciones de WordPress multisitio.
-* Totalmente compatible con los plugins [qTranslate](http://wordpress.org/plugins/qtranslate/) y [Media File Renamer](http://wordpress.org/plugins/media-file-renamer/).
+* Totalmente compatible con los plugins [qTranslate](https://wordpress.org/plugins/qtranslate/) y [Media File Renamer](https://wordpress.org/plugins/media-file-renamer/).
 * Informa automáticamente a Google y a Bing cada vez que publiquemos una nueva entrada o página.
 * Genera automáticamente múltiples sitemaps con un máximo de 1.000 imágenes por cada uno de ellos.
 
@@ -30,26 +30,26 @@ Genera dinámicamente el archivo sitemap-image.xml, un mapa de sitio de imágene
 **Art Project Group** te ofrece [**Soporte técnico**](https://artprojectgroup.es/tienda/ticket-de-soporte) para configurar o instalar **APG Google Image Sitemap Feed**. 
 
 = Origen =
-**APG Google Image Sitemap Feed** ha sido programado a partir de los plugins [*Google News Sitemap Feed With Multisite Support*](http://wordpress.org/plugins/google-news-sitemap-feed-with-multisite-support/) de [Tim Brandon](http://profiles.wordpress.org/users/timbrd/) y [*Google XML Sitemap for Images*](http://wordpress.org/plugins/google-image-sitemap/) de [Amit Agarwal](http://profiles.wordpress.org/labnol/), que aún siendo magníficos plugins no ofrecían todas las características que necesitábamos. Aún así su trabajo ha sido completamente imprescindible para la realización de este plugin.
+**APG Google Image Sitemap Feed** ha sido programado a partir de los plugins [*Google News Sitemap Feed With Multisite Support*](https://wordpress.org/plugins/google-news-sitemap-feed-with-multisite-support/) de [Tim Brandon](https://profiles.wordpress.org/users/timbrd/) y [*Google XML Sitemap for Images*](https://wordpress.org/plugins/google-image-sitemap/) de [Amit Agarwal](https://profiles.wordpress.org/labnol/), que aún siendo magníficos plugins no ofrecían todas las características que necesitábamos. Aún así su trabajo ha sido completamente imprescindible para la realización de este plugin.
 
 = Complementos =
-Se recomienda el uso de **APG Google Image Sitemap Feed** junto a [**Google Video Sitemap Feed With Multisite Support**](http://wordpress.org/plugins/google-video-sitemap-feed-with-multisite-support/) que genera el archivo `sitemap-video.xml`, y [**Google Mobile Sitemap Feed With Multisite Support**](http://wordpress.org/plugins/google-mobile-sitemap-feed-with-multisite-support/) que genera el archivo `sitemap-mobile.xml`.
+Se recomienda el uso de **APG Google Image Sitemap Feed** junto a [**Google Video Sitemap Feed With Multisite Support**](https://wordpress.org/plugins/google-video-sitemap-feed-with-multisite-support/) que genera el archivo `sitemap-video.xml`.
 
 = Muy importante =
 Se han descrito errores al utilizarlo conjuntamente con la última versión de **Google XML Sitemaps** con soporte para WordPress multisitio. Los errores están descritos en [¿Cómo arreglar la incompatibilidad de Google XML Sitemaps con nuestros plugins?](https://artprojectgroup.es/como-arreglar-la-incompatibilidad-de-google-xml-sitemaps-con-nuestros-plugins) donde encontrarás toda la información necesaria para solucionar la incompatibilidad detectada.
 
 = Más información =
-En nuestro sitio web oficial puede obtener más información sobre [**APG Google Image Sitemap Feed**](https://artprojectgroup.es/plugins-para-wordpress/google-image-sitemap-feed-with-multisite-support). 
+En nuestro sitio web oficial puede obtener más información sobre [**APG Google Image Sitemap Feed**](https://artprojectgroup.es/plugins-para-wordpress/apg-google-image-sitemap-feed). 
 
 = Comentarios =
 No olvides dejarnos tu comentario en:
 
-* [APG Google Image Sitemap Feed](https://artprojectgroup.es/plugins-para-wordpress/google-image-sitemap-feed-with-multisite-support) en Art Project Group.
+* [APG Google Image Sitemap Feed](https://artprojectgroup.es/plugins-para-wordpress/apg-google-image-sitemap-feed) en Art Project Group.
 * [Art Project Group](https://www.facebook.com/artprojectgroup) en Facebook.
 * [@artprojectgroup](https://twitter.com/artprojectgroup) en Twitter.
 
 = Más plugins =
-Recuerda que puedes encontrar más [plugins para WordPress](https://artprojectgroup.es/plugins-para-wordpress) en [Art Project Group](https://artprojectgroup.es) y en nuestro perfil en [WordPress](http://profiles.wordpress.org/artprojectgroup/).
+Recuerda que puedes encontrar más [plugins para WordPress](https://artprojectgroup.es/plugins-para-wordpress) en [Art Project Group](https://artprojectgroup.es) y en nuestro perfil en [WordPress](https://profiles.wordpress.org/artprojectgroup/).
 
 = GitHub =
 Puedes seguir el desarrollo de este plugin en [Github](https://github.com/artprojectgroup/google-image-sitemap-feed-with-multisite-support).
@@ -81,6 +81,8 @@ Si necesitas ayuda para configurar o instalar **APG Google Image Sitemap Feed**,
 1. Captura de pantalla de sitemap-image.xml.
 
 == Changelog ==
+= 2.0.1 =
+* Pequeños arreglos.
 = 2.0 =
 * Adecuación de la nueva estructura de datos.
 * Generación de múltiples sitemaps por cada 1.000 imágenes.
@@ -102,7 +104,7 @@ Si necesitas ayuda para configurar o instalar **APG Google Image Sitemap Feed**,
 = 1.0.1 =
 * Arreglo de error que provocaba que no se mostraran las URLs correctas en las entradas con múltiples imágenes.
 = 1.0 =
-* Soporte del plugin [Media File Renamer](http://wordpress.org/plugins/media-file-renamer/).
+* Soporte del plugin [Media File Renamer](https://wordpress.org/plugins/media-file-renamer/).
 = 0.9 =
 * Arreglo de error que borraba toda la configuración al desactivar el plugin.
 * Corrección menor que evita la aparición de un código de error al recopilar información sobre el plugin.
@@ -131,9 +133,8 @@ Si necesitas ayuda para configurar o instalar **APG Google Image Sitemap Feed**,
 * Versión inicial.
 
 == Upgrade Notice ==
-= 2.0 =
-* Adecuación de la nueva estructura de datos.
-* Generación de múltiples sitemaps por cada 1.000 imágenes.
+= 2.0.1 =
+* Pequeños arreglos.
 
 ==Traducciones ==
 * *English*: by [**Art Project Group**](https://artprojectgroup.es/) (default language).
@@ -155,7 +156,7 @@ Esperamos que os guste nuestra iniciativa.
 ¿Te ha gustado y te ha resultado útil **APG Google Image Sitemap Feed** en tu sitio web? Te agradeceríamos una [pequeña donación](https://artprojectgroup.es/tienda/donacion) que nos ayudará a seguir mejorando este plugin y a crear más plugins totalmente gratuitos para toda la comunidad WordPress.
 
 == Gracias ==
-* A [Tim Brandon](http://profiles.wordpress.org/users/timbrd/) y [Amit Agarwal](http://profiles.wordpress.org/labnol/) por sus grandes plugins que han inspirado **APG Google Image Sitemap Feed**.
+* A [Tim Brandon](https://profiles.wordpress.org/users/timbrd/) y [Amit Agarwal](https://profiles.wordpress.org/labnol/) por sus grandes plugins que han inspirado **APG Google Image Sitemap Feed**.
 * A todos los que lo usáis.
 * A todos los que ayudáis a mejorarlo.
 * A todos los que realizáis donaciones.
