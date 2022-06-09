@@ -35,7 +35,7 @@ function apg_image_sitemap_actualiza( $upgrader_object, $opciones ) {
  
     if ( $opciones[ 'action' ] == 'update' && $opciones[ 'type' ] == 'plugin' ) {
         foreach ( $opciones[ 'plugins' ] as $plugin_apg ) {
-            if ( $plugin == $current_plugin_path_name ) {
+            if ( $plugin_apg == $current_plugin_path_name ) {
                 global $wp_rewrite;
 
                 $wp_rewrite->flush_rules(); //Regenera los enlaces permanentes
