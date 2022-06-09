@@ -8,7 +8,7 @@ global $maximo_imagenes, $wp_query;
 $imagenes   = get_transient( 'xml_sitemap_image' );
 if ( $imagenes === false ) {
     $imagenes = $wpdb->get_results( "SELECT P1.ID, P1.post_parent FROM $wpdb->posts P1 LEFT JOIN $wpdb->posts P2 ON P1.post_parent = P2.ID WHERE P1.post_type = 'attachment' AND P1.post_mime_type like 'image%' AND P1.post_parent > 0 and P2.post_status = 'publish' ORDER BY P1.post_date desc" ); //Consulta
-    set_transient( 'xml_sitemap_image', $imagenes, 30 * DAY_IN_SECONDS );
+    set_transient( 'xml_sitemap_image', $imagenes, 24 * HOUR_IN_SECONDS );
     APGSitemapImage::desactivar();
 }
 

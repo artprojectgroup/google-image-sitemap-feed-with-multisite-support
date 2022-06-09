@@ -42,7 +42,7 @@ function apg_image_sitemap_plugin( $nombre ) {
 	global $apg_image_sitemap;
 
 	$respuesta	= get_transient( 'apg_image_sitemap_plugin' );
-	if ( false === $respuesta ) {
+	if ( $respuesta === false ) {
 		$respuesta = wp_remote_get( 'https://api.wordpress.org/plugins/info/1.2/?action=plugin_information&request[slug]=' . $nombre  );
 		set_transient( 'apg_image_sitemap_plugin', $respuesta, 24 * HOUR_IN_SECONDS );
 	}
