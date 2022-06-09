@@ -2,7 +2,7 @@
 /*
 Genera la plantilla XML
 */
-global $maximo_imagenes;
+global $maximo_imagenes, $wp_query;
 
 //Obtiene el listado de todas las imágenes
 $imagenes   = get_transient( 'xml_sitemap_image' );
@@ -13,12 +13,12 @@ if ( $imagenes === false ) {
 }
 
 //Añade la cabecera
-status_header( '200' ); // force header( 'HTTP/1.1 200 OK' ) for sites without posts
+status_header( '200' );
 header( 'Content-Type: text/xml; charset=' . get_bloginfo( 'charset' ), true );
 
 //Hay que dividir el sitemap en varios
-$numero_feed        = preg_replace( '/[^0-9]/', '', $wp->request );
-if ( count( $imagenes ) > $maximo_imagenes && ! $numero_feed ) {
+$numero_feed    = preg_replace( '/[^0-9]/', '', $wp->request );
+if ( ! empty ( $imagenes ) && count( $imagenes ) > $maximo_imagenes && ! $numero_feed ) {
     echo '<?xml version="1.0" encoding="' . get_bloginfo( 'charset' ) . '"?>
 <!-- Created by APG Google Image Sitemap Feed by Art Project Group (https://artprojectgroup.es/plugins-para-wordpress/apg-google-image-sitemap-feed) -->
 <!-- generated-on="' . date( 'Y-m-d\TH:i:s+00:00' ) . '" -->
@@ -30,7 +30,7 @@ if ( count( $imagenes ) > $maximo_imagenes && ! $numero_feed ) {
     }
     echo '</sitemapindex>';
 
-    exit();
+	return;
 }
 
 //Inicia la plantilla
@@ -39,17 +39,12 @@ echo '<?xml version="1.0" encoding="' . get_bloginfo( 'charset' ) . '"?>
 <!-- generated-on="' . date( 'Y-m-d\TH:i:s+00:00' ) . '" -->
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="https://www.google.com/schemas/sitemap-image/1.1">' . PHP_EOL;
 
-global $wp_query;
+$wp_query->is_404	= false;
+$wp_query->is_feed	= true;
+$dominio			= $_SERVER[ 'SERVER_NAME' ];
+$protocolo          = ( isset( $_SERVER[ 'HTTPS' ] ) && ( $_SERVER[ 'HTTPS' ] == 'on' || $_SERVER[ 'HTTPS' ] == 1 ) || isset( $_SERVER[ 'HTTP_X_FORWARDED_PROTO' ] ) && $_SERVER[ 'HTTP_X_FORWARDED_PROTO' ] == 'https') ? 'https://' : 'http://';
 
-$wp_query->is_404	= false;// force is_404(  ) condition to false when on site without posts
-$wp_query->is_feed	= true;	// force is_feed(  ) condition to true so WP Super Cache includes the sitemap in its feeds cache
-$dominio			= $_SERVER['SERVER_NAME'];
-
-if ( empty( $imagenes ) ) {
-	echo "</urlset>";
-	
-	return false;
-} else {
+if ( ! empty( $imagenes ) ) {
 	$entrada_anterior  = false;
 	$primera_imagen    = false;
     if ( $numero_feed ) {
@@ -58,13 +53,12 @@ if ( empty( $imagenes ) ) {
     }
 
     foreach ( $imagenes as $imagen ) {
-
-		$entrada_actual= $imagen->post_parent;
-		$url_de_imagen = wp_get_attachment_url( $imagen->ID );
+		$entrada_actual   = $imagen->post_parent;
+		$url_de_imagen    = wp_get_attachment_url( $imagen->ID );
 		if ( $entrada_actual != $entrada_anterior ) {
 			$url = get_permalink( $entrada_actual );
 			if ( ! $url ) {
-				$url = "https://" . $_SERVER['SERVER_NAME'] . "/";
+				$url    = $protocolo . $$dominio . "/";
 			}
 			
 			if ( $primera_imagen == true ) {

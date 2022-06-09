@@ -9,7 +9,7 @@ Requires at least: 2.6
 
 Tested up to: 6.1
 
-Stable tag: 2.0.1
+Stable tag: 2.0.2
 
 License: GPLv3
 
@@ -39,7 +39,7 @@ Genera dinámicamente el archivo sitemap-image.xml, un mapa de sitio de imágene
 **APG Google Image Sitemap Feed** ha sido programado a partir de los plugins [*Google News Sitemap Feed With Multisite Support*](https://wordpress.org/plugins/google-news-sitemap-feed-with-multisite-support/) de [Tim Brandon](https://profiles.wordpress.org/users/timbrd/) y [*Google XML Sitemap for Images*](https://wordpress.org/plugins/google-image-sitemap/) de [Amit Agarwal](https://profiles.wordpress.org/labnol/), que aún siendo magníficos plugins no ofrecían todas las características que necesitábamos. Aún así su trabajo ha sido completamente imprescindible para la realización de este plugin.
 
 ### Complementos
-Se recomienda el uso de **APG Google Image Sitemap Feed** junto a [**Google Video Sitemap Feed With Multisite Support**](https://wordpress.org/plugins/google-video-sitemap-feed-with-multisite-support/) que genera el archivo `sitemap-video.xml`.
+Se recomienda el uso de **APG Google Image Sitemap Feed** junto a [**APG Google Video Sitemap Feed**](https://wordpress.org/plugins/google-video-sitemap-feed-with-multisite-support/) que genera el archivo `sitemap-video.xml`.
 
 ### Muy importante
 Se han descrito errores al utilizarlo conjuntamente con la última versión de **Google XML Sitemaps** con soporte para WordPress multisitio. Los errores están descritos en [¿Cómo arreglar la incompatibilidad de Google XML Sitemaps con nuestros plugins?](https://artprojectgroup.es/como-arreglar-la-incompatibilidad-de-google-xml-sitemaps-con-nuestros-plugins) donde encontrarás toda la información necesaria para solucionar la incompatibilidad detectada.
@@ -84,6 +84,9 @@ Si necesitas ayuda para configurar o instalar **APG Google Image Sitemap Feed**,
 *En ningún caso **Art Project Group** proporciona ningún tipo de soporte técnico gratuito.*
 
 ## Changelog
+### 2.0.2
+* Pequeños arreglos.
+
 ### 2.0.1
 * Pequeños arreglos.
 

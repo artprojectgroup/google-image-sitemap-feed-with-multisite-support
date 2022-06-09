@@ -38,7 +38,7 @@ class APGSitemapImage {
             'sitemap-image.xml$'    => $wp_rewrite->index . '?feed=sitemap-image' 
         ];
         $imagenes             = get_transient( 'xml_sitemap_image' );
-        if ( ceil( count( $imagenes ) / $maximo_imagenes ) > 1 ) {
+        if ( ! empty ( $imagenes ) && ceil( count( $imagenes ) / $maximo_imagenes ) > 1 ) {
             for ( $i = 1; $i <= ceil( count( $imagenes ) / $maximo_imagenes ); $i++ ) {
                 $feed_rules[ "sitemap-image-$i.xml$" ]   = $wp_rewrite->index . "?feed=sitemap-image";
             }

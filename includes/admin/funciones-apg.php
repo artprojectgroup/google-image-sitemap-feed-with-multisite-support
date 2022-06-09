@@ -24,13 +24,13 @@ function apg_image_sitemap_enlaces( $enlaces, $archivo ) {
 	global $apg_image_sitemap;
 
 	if ( $archivo == DIRECCION_apg_image_sitemap ) {
-		$plugin		= apg_image_sitemap_plugin( $apg_image_sitemap['plugin_uri'] );
-		$enlaces[]	= '<a href="' . $apg_image_sitemap['donacion'] . '" target="_blank" title="' . __( 'Make a donation by ', 'google-image-sitemap-feed-with-multisite-support' ) . 'APG"><span class="genericon genericon-cart"></span></a>';
-		$enlaces[]	= '<a href="'. $apg_image_sitemap['plugin_url'] . '" target="_blank" title="' . $apg_image_sitemap['plugin'] . '"><strong class="artprojectgroup">APG</strong></a>';
+		$plugin		= apg_image_sitemap_plugin( $apg_image_sitemap[ 'plugin_uri' ] );
+		$enlaces[]	= '<a href="' . $apg_image_sitemap[ 'donacion' ] . '" target="_blank" title="' . __( 'Make a donation by ', 'google-image-sitemap-feed-with-multisite-support' ) . 'APG"><span class="genericon genericon-cart"></span></a>';
+		$enlaces[]	= '<a href="'. $apg_image_sitemap[ 'plugin_url' ] . '" target="_blank" title="' . $apg_image_sitemap[ 'plugin' ] . '"><strong class="artprojectgroup">APG</strong></a>';
 		$enlaces[]	= '<a href="https://www.facebook.com/artprojectgroup" title="' . __( 'Follow us on ', 'google-image-sitemap-feed-with-multisite-support' ) . 'Facebook" target="_blank"><span class="genericon genericon-facebook-alt"></span></a> <a href="https://twitter.com/artprojectgroup" title="' . __( 'Follow us on ', 'google-image-sitemap-feed-with-multisite-support' ) . 'Twitter" target="_blank"><span class="genericon genericon-twitter"></span></a> <a href="https://es.linkedin.com/in/artprojectgroup" title="' . __( 'Follow us on ', 'google-image-sitemap-feed-with-multisite-support' ) . 'LinkedIn" target="_blank"><span class="genericon genericon-linkedin"></span></a>';
 		$enlaces[]	= '<a href="https://profiles.wordpress.org/artprojectgroup/" title="' . __( 'More plugins on ', 'google-image-sitemap-feed-with-multisite-support' ) . 'WordPress" target="_blank"><span class="genericon genericon-wordpress"></span></a>';
 		$enlaces[]	= '<a href="mailto:info@artprojectgroup.es" title="' . __( 'Contact with us by ', 'google-image-sitemap-feed-with-multisite-support' ) . 'e-mail"><span class="genericon genericon-mail"></span></a> <a href="skype:artprojectgroup" title="' . __( 'Contact with us by ', 'google-image-sitemap-feed-with-multisite-support' ) . 'Skype"><span class="genericon genericon-skype"></span></a>';
-		$enlaces[]	= apg_image_sitemap_plugin( $apg_image_sitemap['plugin_uri'] );
+		$enlaces[]	= apg_image_sitemap_plugin( $apg_image_sitemap[ 'plugin_uri' ] );
 	}
 	
 	return $enlaces;
