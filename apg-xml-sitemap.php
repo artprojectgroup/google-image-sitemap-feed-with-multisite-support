@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: APG Google Image Sitemap Feed
-Version: 2.0.2.1
+Version: 2.0.2.2
 Plugin URI: https://wordpress.org/plugins/google-image-sitemap-feed-with-multisite-support/
 Description: Dynamically generates a Google Image Sitemap and automatically submit updates to Google and Bing. No settings required. Compatible with WordPress Multisite installations. Created from <a href="https://profiles.wordpress.org/users/timbrd/" target="_blank">Tim Brandon</a> <a href="https://wordpress.org/plugins/google-news-sitemap-feed-with-multisite-support/" target="_blank"><strong>Google News Sitemap Feed With Multisite Support</strong></a> and <a href="https://profiles.wordpress.org/labnol/" target="_blank">Amit Agarwal</a> <a href="https://wordpress.org/plugins/google-image-sitemap/" target="_blank"><strong>Google XML Sitemap for Images</strong></a> plugins.
 Author URI: https://artprojectgroup.es/
@@ -34,8 +34,8 @@ function apg_image_sitemap_actualiza( $upgrader_object, $opciones ) {
     $plugin_apg = plugin_basename( __FILE__ );
  
     if ( $opciones[ 'action' ] == 'update' && $opciones[ 'type' ] == 'plugin' ) {
-        foreach ( $opciones[ 'plugins' ] as $plugin_apg ) {
-            if ( $plugin_apg == $current_plugin_path_name ) {
+        foreach ( $opciones[ 'plugins' ] as $plugin ) {
+            if ( $plugin == $plugin_apg ) {
                 global $wp_rewrite;
 
                 $wp_rewrite->flush_rules(); //Regenera los enlaces permanentes

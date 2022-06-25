@@ -4,7 +4,7 @@ Donate link: https://artprojectgroup.es/tienda/donacion
 Tags: Google, Google Image, Google Image Sitemap, sitemap, sitemap-image.xml, qTranslate, Media File Renamer
 Requires at least: 2.6
 Tested up to: 6.1
-Stable tag: 2.0.2.1
+Stable tag: 2.0.2.2
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -81,6 +81,8 @@ Si necesitas ayuda para configurar o instalar **APG Google Image Sitemap Feed**,
 1. Captura de pantalla de sitemap-image.xml.
 
 == Changelog ==
+= 2.0.2.2 =
+* Pequeños arreglos.
 = 2.0.2.1 =
 * Pequeños arreglos.
 = 2.0.2 =
@@ -137,7 +139,7 @@ Si necesitas ayuda para configurar o instalar **APG Google Image Sitemap Feed**,
 * Versión inicial.
 
 == Upgrade Notice ==
-= 2.0.2.1 =
+= 2.0.2.2 =
 * Pequeños arreglos.
 
 ==Traducciones ==
