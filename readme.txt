@@ -34,7 +34,7 @@ Builds sitemap-image.xml on the fly, an image sitemap for Google. Nothing to con
 **Art Project Group** offers paid [**technical support**](https://artprojectgroup.es/tienda/ticket-de-soporte) to set up or install **APG Google Image Sitemap Feed**.
 
 = Origin =
-**APG Google Image Sitemap Feed** was built on top of [*Google News Sitemap Feed With Multisite Support*](https://wordpress.org/plugins/google-news-sitemap-feed-with-multisite-support/) by [Tim Brandon](https://profiles.wordpress.org/users/timbrd/) and [*Google XML Sitemap for Images*](https://wordpress.org/plugins/google-image-sitemap/) by [Amit Agarwal](https://profiles.wordpress.org/labnol/). Both are excellent plugins that did not cover everything we needed, and neither of them would this one exist without.
+**APG Google Image Sitemap Feed** was built on top of [*Google News Sitemap Feed With Multisite Support*](https://wordpress.org/plugins/google-news-sitemap-feed-with-multisite-support/) by [Tim Brandon](https://profiles.wordpress.org/timbrd/) and [*Google XML Sitemap for Images*](https://wordpress.org/plugins/google-image-sitemap/) by [Amit Agarwal](https://profiles.wordpress.org/labnol/). Both are excellent plugins that did not cover everything we needed, and neither of them would this one exist without.
 
 = Companion plugin =
 Pair it with [**APG Google Video Sitemap Feed**](https://wordpress.org/plugins/google-video-sitemap-feed-with-multisite-support/), which builds `sitemap-video.xml` the same way.
@@ -184,7 +184,7 @@ Yes, with **Google XML Sitemaps**. That plugin claims every possible sitemap typ
 Has **APG Google Image Sitemap Feed** been useful on your site? A [small donation](https://artprojectgroup.es/tienda/donacion) helps us keep improving it and building more free plugins for the WordPress community.
 
 == Thanks ==
-* To [Tim Brandon](https://profiles.wordpress.org/users/timbrd/) and [Amit Agarwal](https://profiles.wordpress.org/labnol/), whose plugins inspired **APG Google Image Sitemap Feed**.
+* To [Tim Brandon](https://profiles.wordpress.org/timbrd/) and [Amit Agarwal](https://profiles.wordpress.org/labnol/), whose plugins inspired **APG Google Image Sitemap Feed**.
 * To everyone using it.
 * To everyone helping to improve it.
 * To everyone who donates.

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Google Image Sitemap Feed With Multisite Support\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-17 20:41+0200\n"
+"Project-Id-Version: APG Google Image Sitemap Feed 3.0.0\n"
+"Report-Msgid-Bugs-To: https://artprojectgroup.es/\n"
+"POT-Creation-Date: 2026-09-18 01:14+0200\n"
 "PO-Revision-Date: 2022-06-08 10:42+0000\n"
 "Last-Translator: Herves-Vida <info@herves-vida.com>\n"
 "Language-Team: Español\n"
@@ -21,6 +21,20 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Textdomain-Support: yes\n"
 "X-Loco-Target-Locale: es_ES\n"
+
+#. translators: %s: name of the detected SEO plugin.
+#: includes/admin/aviso-seo.php:120
+#, php-format
+msgid "%s is already publishing a sitemap that includes your images, so this plugin is probably redundant. Keeping both is harmless, but you only need one."
+msgstr "%s ya publica un sitemap que incluye tus imágenes, así que este plugin probablemente sobra. Tener los dos no hace daño, pero sólo necesitas uno."
+
+#: includes/admin/aviso-seo.php:126
+msgid "Deactivate this plugin"
+msgstr "Desactivar este plugin"
+
+#: includes/admin/aviso-seo.php:127
+msgid "Keep it and hide this notice"
+msgstr "Mantenerlo y ocultar este aviso"
 
 #: includes/admin/funciones-apg.php:35
 msgid "Make a donation by "
@@ -48,34 +62,22 @@ msgstr "Por favor, puntúa %s:"
 msgid "Unknown rating"
 msgstr "Puntuación desconocida"
 
-#. translators: %s: name of the detected SEO plugin.
-#: includes/admin/aviso-seo.php:120
-#, php-format
-msgid "%s is already publishing a sitemap that includes your images, so this plugin is probably redundant. Keeping both is harmless, but you only need one."
-msgstr "%s ya publica un sitemap que incluye tus imágenes, así que este plugin probablemente sobra. Tener los dos no hace daño, pero sólo necesitas uno."
+#. Name of the plugin
+msgid "APG Google Image Sitemap Feed"
+msgstr "APG Google Image Sitemap Feed"
 
-#: includes/admin/aviso-seo.php:126
-msgid "Deactivate this plugin"
-msgstr "Desactivar este plugin"
+#. URI of the plugin
+msgid "https://wordpress.org/plugins/google-image-sitemap-feed-with-multisite-support/"
+msgstr "https://wordpress.org/plugins/google-image-sitemap-feed-with-multisite-support/"
 
-#: includes/admin/aviso-seo.php:127
-msgid "Keep it and hide this notice"
-msgstr "Mantenerlo y ocultar este aviso"
+#. Description of the plugin
+msgid "Dynamically generates a Google Image Sitemap and automatically submits updates through IndexNow. No settings required. Compatible with WordPress Multisite installations. Created from <a href=\"https://profiles.wordpress.org/timbrd/\" target=\"_blank\">Tim Brandon</a> <a href=\"https://wordpress.org/plugins/google-news-sitemap-feed-with-multisite-support/\" target=\"_blank\"><strong>Google News Sitemap Feed With Multisite Support</strong></a> and <a href=\"https://profiles.wordpress.org/labnol/\" target=\"_blank\">Amit Agarwal</a> <a href=\"https://wordpress.org/plugins/google-image-sitemap/\" target=\"_blank\"><strong>Google XML Sitemap for Images</strong></a> plugins."
+msgstr "Genera dinámicamente un mapa de sitio de imágenes para Google e informa automáticamente de las actualizaciones mediante IndexNow. No requiere configuración. Compatible con instalaciones de WordPress Multisite. Creado a partir del plugin <a href=\"https://wordpress.org/plugins/google-news-sitemap-feed-with-multisite-support/\" target=\"_blank\"><strong>Google News Sitemap Feed With Multisite Support</strong></a> de <a href=\"https://profiles.wordpress.org/timbrd/\" target=\"_blank\">Tim Brandon</a> y del plugin <a href=\"https://wordpress.org/plugins/google-image-sitemap/\" target=\"_blank\"><strong>Google XML Sitemap for Images</strong></a> de <a href=\"https://profiles.wordpress.org/labnol/\" target=\"_blank\">Amit Agarwal</a>."
 
-#~ msgid "APG Google Image Sitemap Feed"
-#~ msgstr "APG Google Image Sitemap Feed"
+#. Author of the plugin
+msgid "Art Project Group"
+msgstr "Art Project Group"
 
-#~ msgid "Art Project Group"
-#~ msgstr "Art Project Group"
-
-#~| msgid "Dynamically generates a Google Image Sitemap and automatically submit updates to Google and Bing. No settings required. Compatible with WordPress Multisite installations. Created from <a href=\"http://profiles.wordpress.org/users/timbrd/\" target=\"_blank\">Tim Brandon</a> <a href=\"http://wordpress.org/plugins/google-news-sitemap-feed-with-multisite-support/\" target=\"_blank\"><strong>Google News Sitemap Feed With Multisite Support</strong></a> and <a href=\"http://profiles.wordpress.org/labnol/\" target=\"_blank\">Amit Agarwal</a> <a href=\"http://wordpress.org/plugins/google-image-sitemap/\" target=\"_blank\"><strong>Google XML Sitemap for Images</strong></a> plugins."
-#~ msgid "Dynamically generates a Google Image Sitemap and automatically submits updates to Google and Bing. No settings required. Compatible with WordPress Multisite installations. Created from <a href=\"https://profiles.wordpress.org/users/timbrd/\" target=\"_blank\">Tim Brandon</a> <a href=\"https://wordpress.org/plugins/google-news-sitemap-feed-with-multisite-support/\" target=\"_blank\"><strong>Google News Sitemap Feed With Multisite Support</strong></a> and <a href=\"https://profiles.wordpress.org/labnol/\" target=\"_blank\">Amit Agarwal</a> <a href=\"https://wordpress.org/plugins/google-image-sitemap/\" target=\"_blank\"><strong>Google XML Sitemap for Images</strong></a> plugins."
-#~ msgstr "Genera dinamicamente un mapa de sitio para Google Image y envía automáticamente las actualizaciones a Google y Bing. No requiere configuración. Compatible con instalaciones de WordPress Multisite. Creado a partir del plugin <a href=\"https://wordpress.org/plugins/google-news-sitemap-feed-with-multisite-support/\" target=\"_blank\"><strong>Google News Sitemap Feed With Multisite Support</strong></a> de <a href=\"https://profiles.wordpress.org/users/timbrd/\" target=\"_blank\">Tim Brandon</a>  y el plugin <a href=\"https://wordpress.org/plugins/google-image-sitemap/\" target=\"_blank\"><strong>Google XML Sitemap for Images</strong></a> de <a href=\"https://profiles.wordpress.org/labnol/\" target=\"_blank\">Amit Agarwal</a>."
-
-#~| msgid "http://www.artprojectgroup.es"
-#~ msgid "https://artprojectgroup.es/"
-#~ msgstr "https://artprojectgroup.es/"
-
-#~| msgid "http://wordpress.org/plugins/google-image-sitemap-feed-with-multisite-support/"
-#~ msgid "https://wordpress.org/plugins/google-image-sitemap-feed-with-multisite-support/"
-#~ msgstr "https://wordpress.org/plugins/google-image-sitemap-feed-with-multisite-support/"
+#. Author URI of the plugin
+msgid "https://artprojectgroup.es/"
+msgstr "https://artprojectgroup.es/"

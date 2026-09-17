@@ -48,7 +48,7 @@ Genera al vuelo el archivo sitemap-image.xml, un mapa de sitio de imágenes para
 
 ### Origen
 
-**APG Google Image Sitemap Feed** se programó a partir de [*Google News Sitemap Feed With Multisite Support*](https://wordpress.org/plugins/google-news-sitemap-feed-with-multisite-support/), de [Tim Brandon](https://profiles.wordpress.org/users/timbrd/), y de [*Google XML Sitemap for Images*](https://wordpress.org/plugins/google-image-sitemap/), de [Amit Agarwal](https://profiles.wordpress.org/labnol/). Son dos plugins magníficos que no cubrían todo lo que necesitábamos, y sin su trabajo este no existiría.
+**APG Google Image Sitemap Feed** se programó a partir de [*Google News Sitemap Feed With Multisite Support*](https://wordpress.org/plugins/google-news-sitemap-feed-with-multisite-support/), de [Tim Brandon](https://profiles.wordpress.org/timbrd/), y de [*Google XML Sitemap for Images*](https://wordpress.org/plugins/google-image-sitemap/), de [Amit Agarwal](https://profiles.wordpress.org/labnol/). Son dos plugins magníficos que no cubrían todo lo que necesitábamos, y sin su trabajo este no existiría.
 
 ### Complementos
 
@@ -272,7 +272,7 @@ Seguimos pensando que la comunidad hispana de WordPress es lo bastante amplia co
 
 ## Gracias
 
-- A [Tim Brandon](https://profiles.wordpress.org/users/timbrd/) y a [Amit Agarwal](https://profiles.wordpress.org/labnol/), cuyos plugins inspiraron **APG Google Image Sitemap Feed**.
+- A [Tim Brandon](https://profiles.wordpress.org/timbrd/) y a [Amit Agarwal](https://profiles.wordpress.org/labnol/), cuyos plugins inspiraron **APG Google Image Sitemap Feed**.
 - A todos los que lo usáis.
 - A todos los que ayudáis a mejorarlo.
 - A todos los que realizáis donaciones.
