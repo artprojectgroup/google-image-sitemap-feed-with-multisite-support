@@ -1,171 +1,193 @@
 === APG Google Image Sitemap Feed ===
 Contributors: artprojectgroup 
 Donate link: https://artprojectgroup.es/tienda/donacion
-Tags: Google, Google Image, Google Image Sitemap, sitemap, sitemap-image.xml, qTranslate, Media File Renamer
-Requires at least: 2.6
-Tested up to: 6.1
-Stable tag: 2.0.2.2
+Tags: Google Image Sitemap, sitemap, sitemap-image.xml, images, IndexNow
+Requires at least: 5.0
+Tested up to: 7.2
+Requires PHP: 7.4
+Stable tag: 3.0.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-Genera dinámicamente el archivo sitemap-image.xml, un mapa de sitio de imágenes para Google. No requiere ningún tipo de configuración.
+Builds sitemap-image.xml on the fly, an image sitemap for Google. Nothing to configure.
 
 == Description ==
-[*Español*](https://wordpress.org/plugins/google-image-sitemap-feed-with-multisite-support/) - [*English*](https://goo.gl/u9zMFp) - [*Italiano*](https://goo.gl/ZcndP4) - [*Français*](https://goo.gl/yyWCYT) - [*Deutsch*](https://goo.gl/1mJWrO) 
+**APG Google Image Sitemap Feed** serves a virtual `sitemap-image.xml` with every image your published content shows. There are no settings: install it, activate it, done.
 
-**APG Google Image Sitemap Feed** genera dinámicamente un mapa de sitio de imágenes para Google creando un archivo `sitemap-image.xml` virtual. 
+= Features =
+* Nothing to configure. It runs on its own from the moment you activate it.
+* Works on WordPress Multisite installations.
+* Collects the featured image, the WooCommerce product gallery, attached images and the ones embedded in the post content.
+* Only publishes content of public post types, each entry with its own `lastmod`.
+* Tells search engines about every change through [IndexNow](https://www.indexnow.org/), which shares the notification with Bing, Yandex, Naver and Seznam.
+* Generates and serves its own IndexNow key, so there is no key file to create or upload.
+* Announces itself in `robots.txt` and in the WordPress sitemap index, which is how Google finds a sitemap now that the ping endpoint is gone.
+* Warns you in the dashboard when an SEO plugin is already publishing an image sitemap and this one would be redundant.
+* Splits into several sitemaps every 50,000 entries, with an index at `sitemap-image.xml`.
+* Works with [qTranslate](https://wordpress.org/plugins/qtranslate/) and [Media File Renamer](https://wordpress.org/plugins/media-file-renamer/).
 
-= Características =
-* No requiere ningún tipo de configuración, por lo que funciona de forma totalmente autónoma y automática.
-* Es totalmente compatible con instalaciones de WordPress multisitio.
-* Totalmente compatible con los plugins [qTranslate](https://wordpress.org/plugins/qtranslate/) y [Media File Renamer](https://wordpress.org/plugins/media-file-renamer/).
-* Informa automáticamente a Google y a Bing cada vez que publiquemos una nueva entrada o página.
-* Genera automáticamente múltiples sitemaps con un máximo de 1.000 imágenes por cada uno de ellos.
-
-= Traducciones =
-* Español ([**Art Project Group**](https://artprojectgroup.es/)).
+= Translations =
 * English ([**Art Project Group**](https://artprojectgroup.es/)).
+* Spanish ([**Art Project Group**](https://artprojectgroup.es/)).
 
-= Soporte técnico =
-**Art Project Group** te ofrece [**Soporte técnico**](https://artprojectgroup.es/tienda/ticket-de-soporte) para configurar o instalar **APG Google Image Sitemap Feed**. 
+= Support =
+**Art Project Group** offers paid [**technical support**](https://artprojectgroup.es/tienda/ticket-de-soporte) to set up or install **APG Google Image Sitemap Feed**.
 
-= Origen =
-**APG Google Image Sitemap Feed** ha sido programado a partir de los plugins [*Google News Sitemap Feed With Multisite Support*](https://wordpress.org/plugins/google-news-sitemap-feed-with-multisite-support/) de [Tim Brandon](https://profiles.wordpress.org/users/timbrd/) y [*Google XML Sitemap for Images*](https://wordpress.org/plugins/google-image-sitemap/) de [Amit Agarwal](https://profiles.wordpress.org/labnol/), que aún siendo magníficos plugins no ofrecían todas las características que necesitábamos. Aún así su trabajo ha sido completamente imprescindible para la realización de este plugin.
+= Origin =
+**APG Google Image Sitemap Feed** was built on top of [*Google News Sitemap Feed With Multisite Support*](https://wordpress.org/plugins/google-news-sitemap-feed-with-multisite-support/) by [Tim Brandon](https://profiles.wordpress.org/users/timbrd/) and [*Google XML Sitemap for Images*](https://wordpress.org/plugins/google-image-sitemap/) by [Amit Agarwal](https://profiles.wordpress.org/labnol/). Both are excellent plugins that did not cover everything we needed, and neither of them would this one exist without.
 
-= Complementos =
-Se recomienda el uso de **APG Google Image Sitemap Feed** junto a [**APG Google Video Sitemap Feed**](https://wordpress.org/plugins/google-video-sitemap-feed-with-multisite-support/) que genera el archivo `sitemap-video.xml`.
+= Companion plugin =
+Pair it with [**APG Google Video Sitemap Feed**](https://wordpress.org/plugins/google-video-sitemap-feed-with-multisite-support/), which builds `sitemap-video.xml` the same way.
 
-= Muy importante =
-Se han descrito errores al utilizarlo conjuntamente con la última versión de **Google XML Sitemaps** con soporte para WordPress multisitio. Los errores están descritos en [¿Cómo arreglar la incompatibilidad de Google XML Sitemaps con nuestros plugins?](https://artprojectgroup.es/como-arreglar-la-incompatibilidad-de-google-xml-sitemaps-con-nuestros-plugins) donde encontrarás toda la información necesaria para solucionar la incompatibilidad detectada.
+= Worth knowing =
+Users have reported problems when running it alongside the latest multisite-capable release of **Google XML Sitemaps**. [How to fix the Google XML Sitemaps incompatibility with our plugins](https://artprojectgroup.es/como-arreglar-la-incompatibilidad-de-google-xml-sitemaps-con-nuestros-plugins) explains what happens and how to solve it.
 
-= Más información =
-En nuestro sitio web oficial puede obtener más información sobre [**APG Google Image Sitemap Feed**](https://artprojectgroup.es/plugins-para-wordpress/apg-google-image-sitemap-feed). 
+= More information =
+Our website has more about [**APG Google Image Sitemap Feed**](https://artprojectgroup.es/plugins-para-wordpress/apg-google-image-sitemap-feed).
 
-= Comentarios =
-No olvides dejarnos tu comentario en:
+= Feedback =
+Tell us what you think at:
 
-* [APG Google Image Sitemap Feed](https://artprojectgroup.es/plugins-para-wordpress/apg-google-image-sitemap-feed) en Art Project Group.
-* [Art Project Group](https://www.facebook.com/artprojectgroup) en Facebook.
-* [@artprojectgroup](https://twitter.com/artprojectgroup) en Twitter.
+* [APG Google Image Sitemap Feed](https://artprojectgroup.es/plugins-para-wordpress/apg-google-image-sitemap-feed) on Art Project Group.
+* [Art Project Group](https://www.facebook.com/artprojectgroup) on Facebook.
+* [@artprojectgroup](https://twitter.com/artprojectgroup) on Twitter.
 
-= Más plugins =
-Recuerda que puedes encontrar más [plugins para WordPress](https://artprojectgroup.es/plugins-para-wordpress) en [Art Project Group](https://artprojectgroup.es) y en nuestro perfil en [WordPress](https://profiles.wordpress.org/artprojectgroup/).
+= More plugins =
+You will find more [WordPress plugins](https://artprojectgroup.es/plugins-para-wordpress) at [Art Project Group](https://artprojectgroup.es) and on our [WordPress profile](https://profiles.wordpress.org/artprojectgroup/).
 
 = GitHub =
-Puedes seguir el desarrollo de este plugin en [Github](https://github.com/artprojectgroup/google-image-sitemap-feed-with-multisite-support).
+Development happens at [GitHub](https://github.com/artprojectgroup/google-image-sitemap-feed-with-multisite-support), where the readme is also available in Spanish.
 
 == Installation ==
-1. Puedes:
- * Subir la carpeta `google-image-sitemap-feed-with-multisite-support` al directorio `/wp-content/plugins/` vía FTP. 
- * Subir el archivo ZIP completo vía *Plugins -> Añadir nuevo -> Subir* en el Panel de Administración de tu instalación de WordPress.
- * Buscar **APG Google Image Sitemap Feed** en el buscador disponible en *Plugins -> Añadir nuevo* y pulsar el botón *Instalar ahora*.
-2. Activar el plugin a través del menú *Plugins* en el Panel de Administración de WordPress.
-3. Listo, ahora ya puedes disfrutar de él, y si te gusta y te resulta útil, hacer una [*donación*](https://artprojectgroup.es/tienda/donacion).
+1. Pick one:
+ * Upload the `google-image-sitemap-feed-with-multisite-support` folder to `/wp-content/plugins/` over FTP.
+ * Upload the ZIP file from *Plugins -> Add New -> Upload* in your WordPress admin.
+ * Search for **APG Google Image Sitemap Feed** under *Plugins -> Add New* and click *Install Now*.
+2. Activate it from the *Plugins* menu.
+3. That is all. If it turns out useful, consider a [*donation*](https://artprojectgroup.es/tienda/donacion).
 
 == Frequently Asked Questions ==
-= ¿Necesita configuración? =
-No, el plugin es totalmente autónomo.
+= Does it need any configuration? =
+No. The plugin runs on its own.
 
-= ¿Es compatible con instalaciones de WordPress multisitio? =
-Si, es completamente compatible.
+= Does it work on WordPress Multisite? =
+Yes, on every site of the network.
 
-= ¿Existen incompatibilidades? =
-Si, se han descrito errores al utilizarlo conjuntamente con el plugin **Google XML Sitemaps**. Los errores están provocados por un orden erróneo de las reglas de redirección de WordPress, ya que **Google XML Sitemaps** interpreta todos los tipos de mapas de sitios posibles. En [¿Cómo arreglar la incompatibilidad de Google XML Sitemaps con nuestros plugins?](https://artprojectgroup.es/como-arreglar-la-incompatibilidad-de-google-xml-sitemaps-con-nuestros-plugins) encontrarás toda la información sobre esta incompatibilidad y la solución a la misma.
+= Which images end up in the sitemap? =
+The ones each published entry actually shows: its featured image, its WooCommerce product gallery, the images attached to it and the ones embedded in its content. Entries in the trash, password-protected ones and non-public post types stay out.
 
-= Soporte técnico =
-Si necesitas ayuda para configurar o instalar **APG Google Image Sitemap Feed**, **Art Project Group** te ofrece su servicio de [**Soporte técnico**](https://artprojectgroup.es/tienda/ticket-de-soporte). 
+= How does it notify search engines? =
+Through [IndexNow](https://www.indexnow.org/), which passes the notification to Bing, Yandex, Naver and Seznam. Google shut down its sitemap ping endpoint in 2023 and now discovers changes on its own, so it is worth submitting `sitemap-image.xml` in *Google Search Console* once.
 
-*En ningún caso **Art Project Group** proporciona ningún tipo de soporte técnico gratuito.*
+= Do I have to set up the IndexNow key? =
+No. The plugin creates it the first time you activate the plugin and serves it from the root of your site, which is where search engines look for it.
+
+= What if I already use Yoast, Rank Math, All in One SEO or SEOPress? =
+Those plugins already publish a sitemap that includes your images, so this one will show a dashboard notice telling you it is probably redundant. Running both does no harm, because Google discards duplicate URLs, but you only need one.
+
+= Are there known incompatibilities? =
+Yes, with **Google XML Sitemaps**. That plugin claims every possible sitemap type, which leaves the WordPress rewrite rules in the wrong order. [How to fix the Google XML Sitemaps incompatibility with our plugins](https://artprojectgroup.es/como-arreglar-la-incompatibilidad-de-google-xml-sitemaps-con-nuestros-plugins) covers the fix.
+
+= Where do I get support? =
+**Art Project Group** offers a paid [**technical support**](https://artprojectgroup.es/tienda/ticket-de-soporte) service to set up or install **APG Google Image Sitemap Feed**.
+
+*Art Project Group does not provide free technical support of any kind.*
 
 == Screenshots ==
-1. Captura de pantalla de sitemap-image.xml.
+1. What sitemap-image.xml looks like.
 
 == Changelog ==
+= 3.0.0 =
+* Replaced the notifications to Google and Bing, whose endpoints no longer exist, with IndexNow.
+* The sitemap now announces itself in `robots.txt` and in the WordPress sitemap index, which is how Google discovers it since the ping endpoint was retired.
+* The sitemap now includes the featured image, the product gallery images and the ones embedded in the content, not only the images attached to the entry.
+* Only images belonging to public post types are published, each entry with its `lastmod`.
+* Fixed the XML namespace and the generation date, which stopped Google from reading the sitemap.
+* Sitemap URLs no longer go through a redirect, and paginated ones that do not exist return a 404.
+* Each entry appears once with all of its images together, and the sitemap splits every 50,000 entries instead of every 1,000 images.
+* Images in the trash and images of password-protected entries no longer show up in the sitemap.
+* Dashboard notice when an SEO plugin already publishes an image sitemap and this one becomes redundant.
+* The sitemap refreshes when an image is uploaded, edited or deleted, and its cache is no longer cleared on every editor autosave.
+* The site address no longer comes from the visitor's request header, which can be spoofed.
+* Every output is escaped and several PHP notices are gone.
+* Brought the code in line with the current wordpress.org review requirements: license header, WordPress API queries instead of raw SQL, and prefixed classes and constants.
+* Compatibility updated up to WordPress 7.2.
 = 2.0.2.2 =
-* Pequeños arreglos.
+* Minor fixes.
 = 2.0.2.1 =
-* Pequeños arreglos.
+* Minor fixes.
 = 2.0.2 =
-* Pequeños arreglos.
+* Minor fixes.
 = 2.0.1 =
-* Pequeños arreglos.
+* Minor fixes.
 = 2.0 =
-* Adecuación de la nueva estructura de datos.
-* Generación de múltiples sitemaps por cada 1.000 imágenes.
+* Adapted to the new data structure.
+* Multiple sitemaps generated every 1,000 images.
 = 1.2.0.4 =
-* Actualización de la consulta SQL.
+* Updated the SQL query.
 = 1.2.0.3 =
-* Actualización de enlaces y pequeñas actualizaciones.
+* Updated links and minor changes.
 = 1.2.0.2 =
-* Actualización de enlaces de soporte y pequeñas actualizaciones.
+* Updated support links and minor changes.
 = 1.2.0.1 =
-* Actualización del paquete de fuentes. Nuevo icono de Google+.
-* Actualización de las traducciones.
+* Updated the font package. New Google+ icon.
+* Updated translations.
 = 1.2 =
-* Modificación de la estructura interna del plugin para ajustarse a los estándares de WordPress.
+* Reorganised the plugin internals to follow the WordPress standards.
 = 1.1.1 =
-* Añadido borrado de caché al publicar nuevo contenido.
+* Cache is now cleared when new content is published.
 = 1.1 =
-* Arreglo de error que provocaba un mensaje de error en versiones superiores a la 5.2 de PHP.
+* Fixed an error that raised a warning on PHP above 5.2.
 = 1.0.1 =
-* Arreglo de error que provocaba que no se mostraran las URLs correctas en las entradas con múltiples imágenes.
+* Fixed an error that printed the wrong URLs on entries with several images.
 = 1.0 =
-* Soporte del plugin [Media File Renamer](https://wordpress.org/plugins/media-file-renamer/).
+* Support for the [Media File Renamer](https://wordpress.org/plugins/media-file-renamer/) plugin.
 = 0.9 =
-* Arreglo de error que borraba toda la configuración al desactivar el plugin.
-* Corrección menor que evita la aparición de un código de error al recopilar información sobre el plugin.
-* Uso de la API Transients de WordPress para mejorar las consultas.
+* Fixed an error that wiped the whole configuration when deactivating the plugin.
+* Minor fix that avoided an error code while collecting information about the plugin.
+* Queries improved with the WordPress Transients API.
 = 0.8.1 =
-* Cambio del enlace de donación.
+* Changed the donation link.
 = 0.8 =
-* Añadida nueva función que limpia la base de datos al desinstalar el plugin.
+* New function that cleans the database when uninstalling the plugin.
 = 0.7 =
-* Arreglo en la codificación de las entidades RSS.
+* Fixed the encoding of the RSS entities.
 = 0.6 =
-* Arreglos menores en el código.
+* Minor code fixes.
 = 0.5 =
-* Actualización de las hojas de estilo acorde al nuevo WordPress 8.
-* Arreglo de pequeños errores en el código.
+* Stylesheets updated for the new WordPress 8.
+* Minor code fixes.
 = 0.4 =
-* Inclusión de nuevos botones y enlaces.
+* New buttons and links.
 = 0.3 =
-* Pequeños arreglos de código.
-* Pequeño arreglo de la traducción.
+* Minor code fixes.
+* Minor translation fix.
 = 0.2 =
-* Pequeñas modificaciones y arreglos de código.
-* Inclusión de enlaces.
-* Actualización de los textos de información.
+* Minor changes and code fixes.
+* New links.
+* Updated the information texts.
 = 0.1 =
-* Versión inicial.
+* First release.
 
 == Upgrade Notice ==
-= 2.0.2.2 =
-* Pequeños arreglos.
+= 3.0.0 =
+* Real coverage of the images on each entry, discovery through `robots.txt` and IndexNow, and several XML fixes.
 
-==Traducciones ==
+== Translations ==
 * *English*: by [**Art Project Group**](https://artprojectgroup.es/) (default language).
-* *Español*: por [**Art Project Group**](https://artprojectgroup.es/).
+* *Spanish*: by [**Art Project Group**](https://artprojectgroup.es/).
 
-== Soporte técnico ==
-Dado que **APG Google Image Sitemap Feed** es totalmente gratuito, **Art Project Group** sólo proporciona el servicio de [**Soporte técnico**](https://artprojectgroup.es/tienda/ticket-de-soporte) previo pago. En ningún caso **Art Project Group** proporciona ningún tipo de soporte técnico gratuito.
+== Support ==
+**APG Google Image Sitemap Feed** is free, and **Art Project Group** only provides [**technical support**](https://artprojectgroup.es/tienda/ticket-de-soporte) as a paid service. Art Project Group does not provide free technical support of any kind.
 
-== ¿Por qué está esta página en español? ==
-Mientras WordPress no nos permita a los desarrolladores realizar esta página en más de un idioma, elegiremos siempre el español.
+== Donation ==
+Has **APG Google Image Sitemap Feed** been useful on your site? A [small donation](https://artprojectgroup.es/tienda/donacion) helps us keep improving it and building more free plugins for the WordPress community.
 
-A pesar de que es una apuesta muy arriesgada y de que reduce mucho las posibilidades de propagación de nuestros plugins, creemos que la comunidad hispana de WordPress es lo suficientemente amplia como para abocarla al idioma inglés hasta el final de los tiempos.
+== Thanks ==
+* To [Tim Brandon](https://profiles.wordpress.org/users/timbrd/) and [Amit Agarwal](https://profiles.wordpress.org/labnol/), whose plugins inspired **APG Google Image Sitemap Feed**.
+* To everyone using it.
+* To everyone helping to improve it.
+* To everyone who donates.
+* To everyone who sends us a kind word.
 
-Por ello regalamos a esa gran comunidad hispana nuestros plugins con interfaces, instrucciones, tutoriales, soporte y páginas web en *WordPress.org* en español.
-
-Esperamos que os guste nuestra iniciativa.
-
-== Donación ==
-¿Te ha gustado y te ha resultado útil **APG Google Image Sitemap Feed** en tu sitio web? Te agradeceríamos una [pequeña donación](https://artprojectgroup.es/tienda/donacion) que nos ayudará a seguir mejorando este plugin y a crear más plugins totalmente gratuitos para toda la comunidad WordPress.
-
-== Gracias ==
-* A [Tim Brandon](https://profiles.wordpress.org/users/timbrd/) y [Amit Agarwal](https://profiles.wordpress.org/labnol/) por sus grandes plugins que han inspirado **APG Google Image Sitemap Feed**.
-* A todos los que lo usáis.
-* A todos los que ayudáis a mejorarlo.
-* A todos los que realizáis donaciones.
-* A todos los que nos animáis con vuestros comentarios.
-
-¡Muchas gracias a todos!
+Thank you all!
