@@ -44,7 +44,7 @@ Genera al vuelo el archivo sitemap-image.xml, un mapa de sitio de imágenes para
 
 ### Soporte técnico
 
-**Art Project Group** te ofrece [**soporte técnico**](https://artprojectgroup.es/tienda/ticket-de-soporte) de pago para configurar o instalar **APG Google Image Sitemap Feed**.
+**Art Project Group** te ofrece [**soporte técnico**](https://artprojectgroup.es/tienda/soporte-tecnico) de pago para configurar o instalar **APG Google Image Sitemap Feed**.
 
 ### Origen
 
@@ -61,6 +61,8 @@ Se han descrito errores al usarlo junto a la última versión de **Google XML Si
 ### Más información
 
 En nuestra web encontrarás más sobre [**APG Google Image Sitemap Feed**](https://artprojectgroup.es/plugins-para-wordpress/apg-google-image-sitemap-feed).
+
+Tienes la [documentación completa](https://artprojectgroup.es/documentacion/apg-google-image-sitemap-feed), con todo lo que hace explicado uno a uno.
 
 ### Comentarios
 
@@ -119,7 +121,7 @@ Sí, con **Google XML Sitemaps**. Ese plugin reclama todos los tipos de sitemap 
 
 ### ¿Dónde consigo soporte?
 
-**Art Project Group** ofrece un servicio de [**soporte técnico**](https://artprojectgroup.es/tienda/ticket-de-soporte) de pago para configurar o instalar **APG Google Image Sitemap Feed**.
+**Art Project Group** ofrece un servicio de [**soporte técnico**](https://artprojectgroup.es/tienda/soporte-tecnico) de pago para configurar o instalar **APG Google Image Sitemap Feed**.
 
 *Art Project Group no presta ningún tipo de soporte técnico gratuito.*
 
@@ -258,7 +260,7 @@ Sí, con **Google XML Sitemaps**. Ese plugin reclama todos los tipos de sitemap 
 
 ## Soporte técnico
 
-**APG Google Image Sitemap Feed** es gratuito, y **Art Project Group** solo presta [**soporte técnico**](https://artprojectgroup.es/tienda/ticket-de-soporte) de pago. Art Project Group no presta ningún tipo de soporte técnico gratuito.
+**APG Google Image Sitemap Feed** es gratuito, y **Art Project Group** solo presta [**soporte técnico**](https://artprojectgroup.es/tienda/soporte-tecnico) de pago. Art Project Group no presta ningún tipo de soporte técnico gratuito.
 
 ## ¿Por qué hay dos readmes?
 
