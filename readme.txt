@@ -1,11 +1,11 @@
 === APG Google Image Sitemap Feed ===
 Contributors: artprojectgroup 
-Donate link: https://artprojectgroup.es/tienda/donacion
+Donate link: https://artprojectgroup.com/shop/donation
 Tags: Google Image Sitemap, sitemap, sitemap-image.xml, images, IndexNow
 Requires at least: 5.0
 Tested up to: 7.2
 Requires PHP: 7.4
-Stable tag: 3.0.0
+Stable tag: 3.0.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -27,11 +27,11 @@ Builds sitemap-image.xml on the fly, an image sitemap for Google. Nothing to con
 * Works with [qTranslate](https://wordpress.org/plugins/qtranslate/) and [Media File Renamer](https://wordpress.org/plugins/media-file-renamer/).
 
 = Translations =
-* English ([**Art Project Group**](https://artprojectgroup.es/)).
-* Spanish ([**Art Project Group**](https://artprojectgroup.es/)).
+* English ([**Art Project Group**](https://artprojectgroup.com/)).
+* Spanish ([**Art Project Group**](https://artprojectgroup.com/)).
 
 = Support =
-**Art Project Group** offers paid [**technical support**](https://artprojectgroup.es/tienda/soporte-tecnico) to set up or install **APG Google Image Sitemap Feed**.
+**Art Project Group** offers paid [**technical support**](https://artprojectgroup.com/shop/technical-support) to set up or install **APG Google Image Sitemap Feed**.
 
 = Origin =
 **APG Google Image Sitemap Feed** was built on top of [*Google News Sitemap Feed With Multisite Support*](https://wordpress.org/plugins/google-news-sitemap-feed-with-multisite-support/) by [Tim Brandon](https://profiles.wordpress.org/timbrd/) and [*Google XML Sitemap for Images*](https://wordpress.org/plugins/google-image-sitemap/) by [Amit Agarwal](https://profiles.wordpress.org/labnol/). Both are excellent plugins that did not cover everything we needed, and neither of them would this one exist without.
@@ -40,22 +40,22 @@ Builds sitemap-image.xml on the fly, an image sitemap for Google. Nothing to con
 Pair it with [**APG Google Video Sitemap Feed**](https://wordpress.org/plugins/google-video-sitemap-feed-with-multisite-support/), which builds `sitemap-video.xml` the same way.
 
 = Worth knowing =
-Users have reported problems when running it alongside the latest multisite-capable release of **Google XML Sitemaps**. [How to fix the Google XML Sitemaps incompatibility with our plugins](https://artprojectgroup.es/como-arreglar-la-incompatibilidad-de-google-xml-sitemaps-con-nuestros-plugins) explains what happens and how to solve it.
+Users have reported problems when running it alongside the latest multisite-capable release of **Google XML Sitemaps**. [How to fix the Google XML Sitemaps incompatibility with our plugins](https://artprojectgroup.com/how-to-fix-the-google-xml-sitemaps-incompatibility-with-our-plugins) explains what happens and how to solve it.
 
 = More information =
-Our website has more about [**APG Google Image Sitemap Feed**](https://artprojectgroup.es/plugins-para-wordpress/apg-google-image-sitemap-feed).
+Our website has more about [**APG Google Image Sitemap Feed**](https://artprojectgroup.com/wordpress-plugins/apg-google-image-sitemap-feed).
 
-You can also read the [full documentation](https://artprojectgroup.es/documentacion/apg-google-image-sitemap-feed), with everything it does explained one by one.
+You can also read the [full documentation](https://artprojectgroup.com/documentation/apg-google-image-sitemap-feed), with everything it does explained one by one.
 
 = Feedback =
 Tell us what you think at:
 
-* [APG Google Image Sitemap Feed](https://artprojectgroup.es/plugins-para-wordpress/apg-google-image-sitemap-feed) on Art Project Group.
+* [APG Google Image Sitemap Feed](https://artprojectgroup.com/wordpress-plugins/apg-google-image-sitemap-feed) on Art Project Group.
 * [Art Project Group](https://www.facebook.com/artprojectgroup) on Facebook.
 * [@artprojectgroup](https://twitter.com/artprojectgroup) on Twitter.
 
 = More plugins =
-You will find more [WordPress plugins](https://artprojectgroup.es/plugins-para-wordpress) at [Art Project Group](https://artprojectgroup.es) and on our [WordPress profile](https://profiles.wordpress.org/artprojectgroup/).
+You will find more [WordPress plugins](https://artprojectgroup.com/wordpress-plugins) at [Art Project Group](https://artprojectgroup.com) and on our [WordPress profile](https://profiles.wordpress.org/artprojectgroup/).
 
 = GitHub =
 Development happens at [GitHub](https://github.com/artprojectgroup/google-image-sitemap-feed-with-multisite-support), where the readme is also available in Spanish.
@@ -66,7 +66,7 @@ Development happens at [GitHub](https://github.com/artprojectgroup/google-image-
  * Upload the ZIP file from *Plugins -> Add New -> Upload* in your WordPress admin.
  * Search for **APG Google Image Sitemap Feed** under *Plugins -> Add New* and click *Install Now*.
 2. Activate it from the *Plugins* menu.
-3. That is all. If it turns out useful, consider a [*donation*](https://artprojectgroup.es/tienda/donacion).
+3. That is all. If it turns out useful, consider a [*donation*](https://artprojectgroup.com/shop/donation).
 
 == Frequently Asked Questions ==
 = Does it need any configuration? =
@@ -88,10 +88,10 @@ No. The plugin creates it the first time you activate the plugin and serves it f
 Those plugins already publish a sitemap that includes your images, so this one will show a dashboard notice telling you it is probably redundant. Running both does no harm, because Google discards duplicate URLs, but you only need one.
 
 = Are there known incompatibilities? =
-Yes, with **Google XML Sitemaps**. That plugin claims every possible sitemap type, which leaves the WordPress rewrite rules in the wrong order. [How to fix the Google XML Sitemaps incompatibility with our plugins](https://artprojectgroup.es/como-arreglar-la-incompatibilidad-de-google-xml-sitemaps-con-nuestros-plugins) covers the fix.
+Yes, with **Google XML Sitemaps**. That plugin claims every possible sitemap type, which leaves the WordPress rewrite rules in the wrong order. [How to fix the Google XML Sitemaps incompatibility with our plugins](https://artprojectgroup.com/how-to-fix-the-google-xml-sitemaps-incompatibility-with-our-plugins) covers the fix.
 
 = Where do I get support? =
-**Art Project Group** offers a paid [**technical support**](https://artprojectgroup.es/tienda/soporte-tecnico) service to set up or install **APG Google Image Sitemap Feed**.
+**Art Project Group** offers a paid [**technical support**](https://artprojectgroup.com/shop/technical-support) service to set up or install **APG Google Image Sitemap Feed**.
 
 *Art Project Group does not provide free technical support of any kind.*
 
@@ -99,6 +99,8 @@ Yes, with **Google XML Sitemaps**. That plugin claims every possible sitemap typ
 1. What sitemap-image.xml looks like.
 
 == Changelog ==
+= 3.0.1 =
+* The links to the website, the donation and the support now open in the language of whoever is looking at the screen.
 = 3.0.0 =
 * Replaced the notifications to Google and Bing, whose endpoints no longer exist, with IndexNow.
 * The sitemap now announces itself in `robots.txt` and in the WordPress sitemap index, which is how Google discovers it since the ping endpoint was retired.
@@ -176,14 +178,14 @@ Yes, with **Google XML Sitemaps**. That plugin claims every possible sitemap typ
 * Real coverage of the images on each entry, discovery through `robots.txt` and IndexNow, and several XML fixes.
 
 == Translations ==
-* *English*: by [**Art Project Group**](https://artprojectgroup.es/) (default language).
-* *Spanish*: by [**Art Project Group**](https://artprojectgroup.es/).
+* *English*: by [**Art Project Group**](https://artprojectgroup.com/) (default language).
+* *Spanish*: by [**Art Project Group**](https://artprojectgroup.com/).
 
 == Support ==
-**APG Google Image Sitemap Feed** is free, and **Art Project Group** only provides [**technical support**](https://artprojectgroup.es/tienda/soporte-tecnico) as a paid service. Art Project Group does not provide free technical support of any kind.
+**APG Google Image Sitemap Feed** is free, and **Art Project Group** only provides [**technical support**](https://artprojectgroup.com/shop/technical-support) as a paid service. Art Project Group does not provide free technical support of any kind.
 
 == Donation ==
-Has **APG Google Image Sitemap Feed** been useful on your site? A [small donation](https://artprojectgroup.es/tienda/donacion) helps us keep improving it and building more free plugins for the WordPress community.
+Has **APG Google Image Sitemap Feed** been useful on your site? A [small donation](https://artprojectgroup.com/shop/donation) helps us keep improving it and building more free plugins for the WordPress community.
 
 == Thanks ==
 * To [Tim Brandon](https://profiles.wordpress.org/timbrd/) and [Amit Agarwal](https://profiles.wordpress.org/labnol/), whose plugins inspired **APG Google Image Sitemap Feed**.

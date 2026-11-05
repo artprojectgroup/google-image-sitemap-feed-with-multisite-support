@@ -9,10 +9,9 @@ Tags: Google Image Sitemap, sitemap, sitemap-image.xml, images, IndexNow
 Requires at least: 5.0
 
 Tested up to: 7.2
-
 Requires PHP: 7.4
 
-Stable tag: 3.0.0
+Stable tag: 3.0.1
 
 License: GPLv3
 
@@ -130,6 +129,10 @@ Sí, con **Google XML Sitemaps**. Ese plugin reclama todos los tipos de sitemap 
 1. Aspecto de sitemap-image.xml.
 
 ## Changelog
+
+### 3.0.1
+
+- Los enlaces a la web, a la donación y al soporte se abren en el idioma de quien mira la pantalla.
 
 ### 3.0.0
 

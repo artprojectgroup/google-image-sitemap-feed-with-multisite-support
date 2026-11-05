@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: APG Google Image Sitemap Feed
-Version: 3.0.0
+Version: 3.0.1
 Plugin URI: https://wordpress.org/plugins/google-image-sitemap-feed-with-multisite-support/
 Description: Dynamically generates a Google Image Sitemap and automatically submits updates through IndexNow. No settings required. Compatible with WordPress Multisite installations. Created from <a href="https://profiles.wordpress.org/timbrd/" target="_blank">Tim Brandon</a> <a href="https://wordpress.org/plugins/google-news-sitemap-feed-with-multisite-support/" target="_blank"><strong>Google News Sitemap Feed With Multisite Support</strong></a> and <a href="https://profiles.wordpress.org/labnol/" target="_blank">Amit Agarwal</a> <a href="https://wordpress.org/plugins/google-image-sitemap/" target="_blank"><strong>Google XML Sitemap for Images</strong></a> plugins.
 Author URI: https://artprojectgroup.es/
@@ -25,7 +25,7 @@ defined( 'ABSPATH' ) || exit;
 
 //Definimos constantes
 define( 'APG_IMAGE_SITEMAP_BASE', plugin_basename( __FILE__ ) );
-define( 'APG_IMAGE_SITEMAP_VERSION', '3.0.0' );
+define( 'APG_IMAGE_SITEMAP_VERSION', '3.0.1' );
 define( 'APG_IMAGE_SITEMAP_ARCHIVO', __FILE__ );
 define( 'APG_IMAGE_SITEMAP_RUTA', plugin_dir_path( __FILE__ ) );
 

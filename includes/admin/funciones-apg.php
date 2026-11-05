@@ -3,12 +3,31 @@
 defined( 'ABSPATH' ) || exit;
 
 //Definimos las variables
+/* Devuelve la direccion de la web en el idioma de quien mira la pantalla. Se resuelve al usarla y
+nunca al cargar el plugin, porque hasta que WordPress no identifica al usuario no se sabe su idioma. */
+function apg_image_sitemap_enlace( $clave ) {
+	global $apg_image_sitemap;
+
+	if ( ! isset( $apg_image_sitemap['enlaces'][ $clave ] ) ) {
+		return '';
+	}
+
+	$par = $apg_image_sitemap['enlaces'][ $clave ];
+
+	return ( 0 === strpos( get_user_locale(), 'es' ) ) ? $par[0] : $par[1];
+}
+
 $apg_image_sitemap = array( 	
 	'plugin' 		=> 'APG Google Image Sitemap Feed', 
 	'plugin_uri' 	=> 'google-image-sitemap-feed-with-multisite-support', 
-	'donacion' 		=> 'https://artprojectgroup.es/tienda/donacion',
-	'soporte' 		=> 'https://artprojectgroup.es/tienda/soporte-tecnico',
-	'plugin_url' 	=> 'https://artprojectgroup.es/plugins-para-wordpress/apg-google-image-sitemap-feed', 
+	//Cada direccion de la web, en espanol y en ingles.
+	'enlaces' 		=> array(
+		'web' 		=> array( 'https://artprojectgroup.es/', 'https://artprojectgroup.com/' ),
+		'plugin_url' 		=> array( 'https://artprojectgroup.es/plugins-para-wordpress/apg-google-image-sitemap-feed', 'https://artprojectgroup.com/wordpress-plugins/apg-google-image-sitemap-feed' ),
+		'donacion' 		=> array( 'https://artprojectgroup.es/tienda/donacion', 'https://artprojectgroup.com/shop/donation' ),
+		'soporte' 		=> array( 'https://artprojectgroup.es/tienda/soporte-tecnico', 'https://artprojectgroup.com/shop/technical-support' ),
+		'documentacion' 		=> array( 'https://artprojectgroup.es/documentacion/apg-google-image-sitemap-feed', 'https://artprojectgroup.com/documentation/apg-google-image-sitemap-feed' ),
+	), 
 	'ajustes' 		=> '', 
 	'puntuacion' 	=> 'https://wordpress.org/support/view/plugin-reviews/google-image-sitemap-feed-with-multisite-support'
  );
@@ -32,8 +51,8 @@ function apg_image_sitemap_enlaces( $enlaces, $archivo ) {
 	global $apg_image_sitemap;
 
 	if ( $archivo === APG_IMAGE_SITEMAP_BASE ) {
-		$enlaces[]	= '<a href="' . esc_url( $apg_image_sitemap[ 'donacion' ] ) . '" target="_blank" title="' . esc_attr( __( 'Make a donation by ', 'google-image-sitemap-feed-with-multisite-support' ) . 'APG' ) . '"><span class="genericon genericon-cart"></span></a>';
-		$enlaces[]	= '<a href="'. esc_url( $apg_image_sitemap[ 'plugin_url' ] ) . '" target="_blank" title="' . esc_attr( $apg_image_sitemap[ 'plugin' ] ) . '"><strong class="artprojectgroup">APG</strong></a>';
+		$enlaces[]	= '<a href="' . esc_url( apg_image_sitemap_enlace( 'donacion' ) ) . '" target="_blank" title="' . esc_attr( __( 'Make a donation by ', 'google-image-sitemap-feed-with-multisite-support' ) . 'APG' ) . '"><span class="genericon genericon-cart"></span></a>';
+		$enlaces[]	= '<a href="'. esc_url( apg_image_sitemap_enlace( 'plugin_url' ) ) . '" target="_blank" title="' . esc_attr( $apg_image_sitemap[ 'plugin' ] ) . '"><strong class="artprojectgroup">APG</strong></a>';
 		$enlaces[]	= '<a href="https://www.facebook.com/artprojectgroup" title="' . esc_attr( __( 'Follow us on ', 'google-image-sitemap-feed-with-multisite-support' ) . 'Facebook' ) . '" target="_blank"><span class="genericon genericon-facebook-alt"></span></a> <a href="https://twitter.com/artprojectgroup" title="' . esc_attr( __( 'Follow us on ', 'google-image-sitemap-feed-with-multisite-support' ) . 'Twitter' ) . '" target="_blank"><span class="genericon genericon-twitter"></span></a> <a href="https://es.linkedin.com/in/artprojectgroup" title="' . esc_attr( __( 'Follow us on ', 'google-image-sitemap-feed-with-multisite-support' ) . 'LinkedIn' ) . '" target="_blank"><span class="genericon genericon-linkedin"></span></a>';
 		$enlaces[]	= '<a href="https://profiles.wordpress.org/artprojectgroup/" title="' . esc_attr( __( 'More plugins on ', 'google-image-sitemap-feed-with-multisite-support' ) . 'WordPress' ) . '" target="_blank"><span class="genericon genericon-wordpress"></span></a>';
 		$enlaces[]	= '<a href="mailto:info@artprojectgroup.es" title="' . esc_attr( __( 'Contact us by ', 'google-image-sitemap-feed-with-multisite-support' ) . 'e-mail' ) . '"><span class="genericon genericon-mail"></span></a> <a href="skype:artprojectgroup" title="' . esc_attr( __( 'Contact us by ', 'google-image-sitemap-feed-with-multisite-support' ) . 'Skype' ) . '"><span class="genericon genericon-skype"></span></a>';
